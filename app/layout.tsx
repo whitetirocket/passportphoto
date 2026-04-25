@@ -81,6 +81,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </ul>
               </div>
               <div>
+                <p className="font-semibold text-sm mb-3 text-gray-800">Tools</p>
+                <ul className="space-y-1">
+                  <li><Link href="/remove-background" className="text-sm text-gray-500 hover:text-blue-600">Remove Background</Link></li>
+                  <li><Link href="/blog" className="text-sm text-gray-500 hover:text-blue-600">Guides & Tips</Link></li>
+                </ul>
+              </div>
+              <div>
                 <p className="font-semibold text-sm mb-3 text-gray-800">Legal</p>
                 <ul className="space-y-1">
                   <li><Link href="/privacy" className="text-sm text-gray-500 hover:text-blue-600">Privacy Policy</Link></li>
