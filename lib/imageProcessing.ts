@@ -102,13 +102,12 @@ export async function fillBackground(imageUrl: string, targetHex: string): Promi
 async function fillBackgroundMediaPipe(imageUrl: string, targetHex: string): Promise<string> {
   const { SelfieSegmentation } = await import('@mediapipe/selfie_segmentation')
 
-  const tr = parseInt(targetHex.slice(1, 3), 16)
-  const tg = parseInt(targetHex.slice(3, 5), 16)
-  const tb = parseInt(targetHex.slice(5, 7), 16)
-
   return new Promise((resolve, reject) => {
     const img = new Image()
     img.onload = () => {
+      const w = img.naturalWidth
+      const h = img.naturalHeight
+
       const seg = new SelfieSegmentation({
         locateFile: (file: string) =>
           `https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation@0.1.1675465747/${file}`,
@@ -116,35 +115,24 @@ async function fillBackgroundMediaPipe(imageUrl: string, targetHex: string): Pro
       seg.setOptions({ modelSelection: 1 })
 
       seg.onResults((results: { segmentationMask: CanvasImageSource }) => {
-        const w = img.naturalWidth
-        const h = img.naturalHeight
+        // Step 1: cut out person using mask as alpha (destination-in)
+        const personCanvas = document.createElement('canvas')
+        personCanvas.width = w
+        personCanvas.height = h
+        const personCtx = personCanvas.getContext('2d')!
+        personCtx.drawImage(img, 0, 0)
+        personCtx.globalCompositeOperation = 'destination-in'
+        personCtx.drawImage(results.segmentationMask, 0, 0, w, h)
 
-        // Get mask pixel data
-        const maskCanvas = document.createElement('canvas')
-        maskCanvas.width = w
-        maskCanvas.height = h
-        const maskCtx = maskCanvas.getContext('2d')!
-        maskCtx.drawImage(results.segmentationMask, 0, 0, w, h)
-        const maskData = maskCtx.getImageData(0, 0, w, h).data
-
-        // Draw original image then replace background
+        // Step 2: fill background color, then draw person on top
         const canvas = document.createElement('canvas')
         canvas.width = w
         canvas.height = h
         const ctx = canvas.getContext('2d')!
-        ctx.drawImage(img, 0, 0)
-        const imgData = ctx.getImageData(0, 0, w, h)
-        const data = imgData.data
+        ctx.fillStyle = targetHex
+        ctx.fillRect(0, 0, w, h)
+        ctx.drawImage(personCanvas, 0, 0)
 
-        for (let i = 0; i < data.length; i += 4) {
-          if (maskData[i] < 128) {
-            data[i] = tr
-            data[i + 1] = tg
-            data[i + 2] = tb
-          }
-        }
-
-        ctx.putImageData(imgData, 0, 0)
         seg.close()
         resolve(canvas.toDataURL('image/jpeg', 0.95))
       })
