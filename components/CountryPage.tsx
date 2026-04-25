@@ -4,6 +4,8 @@ import Link from 'next/link'
 import type { CountrySpec } from '@/lib/countries'
 import { allCountries as countries } from '@/lib/countries'
 
+const BASE_URL = 'https://idphotosnap.com'
+
 interface Props {
   country: CountrySpec
 }
@@ -11,8 +13,20 @@ interface Props {
 export default function CountryPage({ country }: Props) {
   const others = countries.filter((c) => c.id !== country.id)
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: country.h1,
+    url: `${BASE_URL}/${country.slug}`,
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'Any',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    description: country.seoDescription,
+  }
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Hero */}
       <div className="text-center mb-6">
         <div className="text-5xl mb-3">{country.flag}</div>
