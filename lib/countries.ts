@@ -43,7 +43,7 @@ export const countries: CountrySpec[] = [
       'Face must cover 70–80% of the frame',
       'Taken within the last 6 months',
     ],
-    seoTitle: 'Free US Passport Photo Maker | 2×2 inch | Instant Download',
+    seoTitle: 'Free US Passport Photo Maker | 2×2 inch | No Watermark | Free',
     seoDescription:
       'Create a compliant US passport photo online for free. Correct 2×2 inch size, white background. No registration, no watermark. Download JPG or print-ready PDF instantly.',
     h1: 'Free US Passport Photo Maker',
@@ -97,7 +97,7 @@ export const countries: CountrySpec[] = [
       'Taken within the last month',
       'No head covering (unless for religious reasons)',
     ],
-    seoTitle: 'Free UK Passport Photo Maker | 35×45mm | Instant Download',
+    seoTitle: 'Free UK Passport Photo Maker | 35×45mm | No Watermark | Free',
     seoDescription:
       'Create a compliant UK passport photo online for free. Correct 35×45mm size. No registration, no watermark. Download JPG or print-ready PDF instantly.',
     h1: 'Free UK Passport Photo Maker',
@@ -151,7 +151,7 @@ export const countries: CountrySpec[] = [
       'Face height between 31–36 mm from chin to crown',
       'Taken within the last 6 months',
     ],
-    seoTitle: 'Free Canada Passport Photo Maker | 50×70mm | Instant Download',
+    seoTitle: 'Free Canada Passport Photo Maker | 50×70mm | No Watermark | Free',
     seoDescription:
       'Create a compliant Canadian passport photo online for free. Correct 50×70mm size. No registration, no watermark. Download JPG or print-ready PDF instantly.',
     h1: 'Free Canada Passport Photo Maker',
@@ -204,7 +204,7 @@ export const countries: CountrySpec[] = [
       'Face must take up at least 75–80% of the frame',
       'Taken within the last 6 months',
     ],
-    seoTitle: 'Free Australian Passport Photo Maker | 35×45mm | Instant Download',
+    seoTitle: 'Free Australian Passport Photo Maker | 35×45mm | No Watermark | Free',
     seoDescription:
       'Create a compliant Australian passport photo online for free. Correct 35×45mm size. No registration, no watermark. Download JPG or print-ready PDF instantly.',
     h1: 'Free Australian Passport Photo Maker',
@@ -259,7 +259,7 @@ export const countries: CountrySpec[] = [
       'Taken within the last 6 months',
       'No shadows on face or background',
     ],
-    seoTitle: 'Free India Passport Photo Maker | 35×45mm | Instant Download',
+    seoTitle: 'Free India Passport Photo Maker | 35×45mm | No Watermark | Free',
     seoDescription:
       'Create a compliant Indian passport photo online for free. Correct 35×45mm size. No registration, no watermark. Download JPG or print-ready PDF instantly.',
     h1: 'Free India Passport Photo Maker',
@@ -314,7 +314,7 @@ export const countries: CountrySpec[] = [
       'Taken within the last 6 months',
       'ICAO biometric compliant',
     ],
-    seoTitle: 'Free Schengen Visa Photo Maker | 35×45mm | Instant Download',
+    seoTitle: 'Free Schengen Visa Photo Maker | 35×45mm | No Watermark | Free',
     seoDescription:
       'Create a compliant Schengen visa photo online for free. Correct 35×45mm biometric size for all EU countries. No registration, no watermark. Instant JPG or PDF download.',
     h1: 'Free Schengen Visa Photo Maker',
@@ -368,7 +368,7 @@ export const countries: CountrySpec[] = [
       'Taken within the last 6 months',
       'No shadows on face or background',
     ],
-    seoTitle: 'Free UAE Passport Photo Maker | 40×60mm | Instant Download',
+    seoTitle: 'Free UAE Passport Photo Maker | 40×60mm | No Watermark | Free',
     seoDescription:
       'Create a compliant UAE passport photo online for free. Correct 40×60mm size. No registration, no watermark. Download JPG or print-ready PDF instantly.',
     h1: 'Free UAE Passport Photo Maker',
@@ -426,7 +426,7 @@ export const extraCountries: CountrySpec[] = [
       'Taken within the last 6 months',
       'ICAO biometric compliant',
     ],
-    seoTitle: 'Free Germany Passport Photo Maker | 35×45mm Biometrisch | Instant Download',
+    seoTitle: 'Free Germany Passport Photo Maker | 35×45mm Biometrisch | No Watermark | Free',
     seoDescription:
       'Create a compliant German biometric passport photo (Passfoto) online for free. Correct 35×45mm size. No registration, no watermark. Download JPG or PDF instantly.',
     h1: 'Free Germany Passport Photo Maker',
@@ -463,7 +463,7 @@ export const extraCountries: CountrySpec[] = [
       'Taken within the last 6 months',
       'No shadows on face or background',
     ],
-    seoTitle: 'Free Japan Visa Photo Maker | 35×45mm | Instant Download',
+    seoTitle: 'Free Japan Visa Photo Maker | 35×45mm | No Watermark | Free',
     seoDescription:
       'Create a compliant Japan visa or passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark. Instant download.',
     h1: 'Free Japan Visa & Passport Photo Maker',
@@ -499,7 +499,7 @@ export const extraCountries: CountrySpec[] = [
       'Face must occupy 70–80% of the frame',
       'Taken within the last 6 months',
     ],
-    seoTitle: 'Free Brazil Passport Photo Maker | 50×70mm | Instant Download',
+    seoTitle: 'Free Brazil Passport Photo Maker | 50×70mm | No Watermark | Free',
     seoDescription:
       'Create a compliant Brazilian passport photo online for free. Correct 50×70mm size. No registration, no watermark. Download JPG or print-ready PDF instantly.',
     h1: 'Free Brazil Passport Photo Maker',
@@ -535,7 +535,7 @@ export const extraCountries: CountrySpec[] = [
       'Face must cover 70–80% of the frame',
       'Taken within the last 6 months',
     ],
-    seoTitle: 'Free Mexico Passport Photo Maker | 35×45mm | Instant Download',
+    seoTitle: 'Free Mexico Passport Photo Maker | 35×45mm | No Watermark | Free',
     seoDescription:
       'Create a compliant Mexican passport photo online for free. Correct 35×45mm size. No registration, no watermark. Download JPG or print-ready PDF instantly.',
     h1: 'Free Mexico Passport Photo Maker',
@@ -572,7 +572,7 @@ export const extraCountries: CountrySpec[] = [
       'Taken within the last 6 months',
       'No shadows on face or background',
     ],
-    seoTitle: 'Free China Visa Photo Maker | 33×48mm | Instant Download',
+    seoTitle: 'Free China Visa Photo Maker | 33×48mm | No Watermark | Free',
     seoDescription:
       'Create a compliant China visa photo online for free. Correct 33×48mm size — unique Chinese format. No registration, no watermark. Instant download.',
     h1: 'Free China Visa Photo Maker',
@@ -612,7 +612,7 @@ export const newCountries: CountrySpec[] = [
       'No shadows on face or background',
       'Taken within the last 6 months',
     ],
-    seoTitle: 'Free Indonesia Passport Photo Maker | Red Background | Instant Download',
+    seoTitle: 'Free Indonesia Passport Photo Maker | Red Background | No Watermark | Free',
     seoDescription:
       'Create a compliant Indonesian passport photo online for free. Correct 51×51mm size with mandatory red background. No registration, no watermark. Instant download.',
     h1: 'Free Indonesia Passport Photo Maker',
@@ -649,7 +649,7 @@ export const newCountries: CountrySpec[] = [
       'Taken within the last 6 months',
       'ICAO biometric compliant',
     ],
-    seoTitle: 'Free Finland Passport Photo Maker | 36×47mm Grey Background | Instant Download',
+    seoTitle: 'Free Finland Passport Photo Maker | 36×47mm Grey Background | No Watermark | Free',
     seoDescription:
       'Create a compliant Finnish passport photo online for free. Unique 36×47mm size with grey background. No registration, no watermark. Instant download.',
     h1: 'Free Finland Passport Photo Maker',

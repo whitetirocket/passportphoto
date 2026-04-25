@@ -245,7 +245,7 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
               ) : (
                 <span>⬇️</span>
               )}
-              Download JPG
+              Download Free JPG
             </button>
             <button
               onClick={handleDownloadPdf}
@@ -257,7 +257,7 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
               ) : (
                 <span>🖨️</span>
               )}
-              Download PDF (print sheet)
+              Download Free PDF
             </button>
             <button
               onClick={() => { setImgSrc(''); setPreviewUrl('') }}

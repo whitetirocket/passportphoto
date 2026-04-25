@@ -10,10 +10,10 @@ import Logo from '@/components/Logo'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Free Passport Photo Maker | Instant Download, No Registration',
+  title: 'Free Passport Photo Maker — No Registration, No Watermark | IDPhotoSnap',
   description:
-    'Create compliant passport and visa photos online for free. Supports US, UK, Canada, Australia, India, Schengen, UAE and more. Processed in your browser — private and instant.',
-  keywords: 'passport photo, free passport photo, online passport photo maker, visa photo',
+    '100% free passport photo maker. No registration, no watermark, no upload. US, UK, Canada, Australia, India, Schengen, UAE + 7 more countries. Download JPG or print-ready PDF instantly.',
+  keywords: 'free passport photo, passport photo maker free, no watermark passport photo, free passport photo online no registration',
   metadataBase: new URL('https://idphotosnap.com'),
   openGraph: {
     type: 'website',

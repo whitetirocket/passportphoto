@@ -8,12 +8,18 @@ export default function Home() {
     <div className="max-w-6xl mx-auto px-4 py-10">
       {/* Hero */}
       <div className="text-center mb-8">
+        <div className="flex justify-center gap-2 mb-4 flex-wrap">
+          <span className="inline-flex items-center gap-1 bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">✓ 100% Free</span>
+          <span className="inline-flex items-center gap-1 bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">✓ No Registration</span>
+          <span className="inline-flex items-center gap-1 bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">✓ No Watermark</span>
+          <span className="inline-flex items-center gap-1 bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full">✓ Instant Download</span>
+        </div>
         <h1 className="text-4xl font-bold text-gray-900 mb-3">
           Free Passport Photo Maker
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Create compliant passport and visa photos online in seconds.
-          No registration, no watermark — your photo never leaves your device.
+          Create passport and visa photos online in seconds — completely free.
+          No registration, no watermark, no upload to any server.
         </p>
       </div>
 
