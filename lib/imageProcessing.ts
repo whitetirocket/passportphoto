@@ -115,14 +115,6 @@ async function fillBackgroundMediaPipe(imageUrl: string, targetHex: string): Pro
       seg.setOptions({ modelSelection: 1 })
 
       seg.onResults((results: { segmentationMask: CanvasImageSource }) => {
-        // Apply 0.5px blur to mask to smooth edge fringe without eroding
-        const softMask = document.createElement('canvas')
-        softMask.width = w
-        softMask.height = h
-        const softCtx = softMask.getContext('2d')!
-        softCtx.filter = 'blur(0.5px)'
-        softCtx.drawImage(results.segmentationMask, 0, 0, w, h)
-
         // Step 1: cut out person using mask as alpha (destination-in)
         const personCanvas = document.createElement('canvas')
         personCanvas.width = w
@@ -130,7 +122,7 @@ async function fillBackgroundMediaPipe(imageUrl: string, targetHex: string): Pro
         const personCtx = personCanvas.getContext('2d')!
         personCtx.drawImage(img, 0, 0)
         personCtx.globalCompositeOperation = 'destination-in'
-        personCtx.drawImage(softMask, 0, 0, w, h)
+        personCtx.drawImage(results.segmentationMask, 0, 0, w, h)
 
         // Step 2: fill background color, then draw person on top
         const canvas = document.createElement('canvas')
