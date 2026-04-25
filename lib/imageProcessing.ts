@@ -89,9 +89,75 @@ function blobToDataURL(blob: Blob): Promise<string> {
   })
 }
 
-// Fills the background with a solid color using flood-fill from image corners.
-// Works best when the existing background is already relatively uniform (typical for passport photos).
-export function fillBackground(imageUrl: string, targetHex: string): Promise<string> {
+// Fills background using MediaPipe Selfie Segmentation ML model.
+// Much better quality than flood-fill, especially on hair and complex edges.
+export async function fillBackground(imageUrl: string, targetHex: string): Promise<string> {
+  try {
+    return await fillBackgroundMediaPipe(imageUrl, targetHex)
+  } catch {
+    return fillBackgroundFloodFill(imageUrl, targetHex)
+  }
+}
+
+async function fillBackgroundMediaPipe(imageUrl: string, targetHex: string): Promise<string> {
+  const { SelfieSegmentation } = await import('@mediapipe/selfie_segmentation')
+
+  const tr = parseInt(targetHex.slice(1, 3), 16)
+  const tg = parseInt(targetHex.slice(3, 5), 16)
+  const tb = parseInt(targetHex.slice(5, 7), 16)
+
+  return new Promise((resolve, reject) => {
+    const img = new Image()
+    img.onload = () => {
+      const seg = new SelfieSegmentation({
+        locateFile: (file: string) =>
+          `https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation@0.1.1675465747/${file}`,
+      })
+      seg.setOptions({ modelSelection: 1 })
+
+      seg.onResults((results: { segmentationMask: CanvasImageSource }) => {
+        const w = img.naturalWidth
+        const h = img.naturalHeight
+
+        // Get mask pixel data
+        const maskCanvas = document.createElement('canvas')
+        maskCanvas.width = w
+        maskCanvas.height = h
+        const maskCtx = maskCanvas.getContext('2d')!
+        maskCtx.drawImage(results.segmentationMask, 0, 0, w, h)
+        const maskData = maskCtx.getImageData(0, 0, w, h).data
+
+        // Draw original image then replace background
+        const canvas = document.createElement('canvas')
+        canvas.width = w
+        canvas.height = h
+        const ctx = canvas.getContext('2d')!
+        ctx.drawImage(img, 0, 0)
+        const imgData = ctx.getImageData(0, 0, w, h)
+        const data = imgData.data
+
+        for (let i = 0; i < data.length; i += 4) {
+          if (maskData[i] < 128) {
+            data[i] = tr
+            data[i + 1] = tg
+            data[i + 2] = tb
+          }
+        }
+
+        ctx.putImageData(imgData, 0, 0)
+        seg.close()
+        resolve(canvas.toDataURL('image/jpeg', 0.95))
+      })
+
+      seg.send({ image: img }).catch(reject)
+    }
+    img.onerror = reject
+    img.src = imageUrl
+  })
+}
+
+// Fallback: flood-fill from corners (works for uniform backgrounds only).
+function fillBackgroundFloodFill(imageUrl: string, targetHex: string): Promise<string> {
   return new Promise((resolve, reject) => {
     const img = new Image()
     img.onload = () => {
