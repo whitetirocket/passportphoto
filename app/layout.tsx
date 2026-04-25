@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
@@ -24,6 +25,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-5EB80XQFS3" strategy="afterInteractive" />
+      <Script id="ga4" strategy="afterInteractive">{`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5EB80XQFS3');
+      `}</Script>
       <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
         <header className="border-b border-gray-100 bg-white sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4">
