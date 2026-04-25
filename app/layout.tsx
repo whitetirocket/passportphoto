@@ -4,6 +4,7 @@ import './globals.css'
 import Link from 'next/link'
 import { allCountries as countries } from '@/lib/countries'
 import MobileNav from '@/components/MobileNav'
+import Logo from '@/components/Logo'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'PassportPhotoSnap',
+    siteName: 'IDPhotoSnap',
   },
 }
 
@@ -26,10 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
         <header className="border-b border-gray-100 bg-white sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2 font-bold text-lg text-blue-600">
-              <span>📸</span>
-              <span>PassportPhotoSnap</span>
-            </Link>
+            <Logo />
             <nav className="hidden md:flex items-center gap-1 flex-wrap">
               {countries.map((c) => (
                 <Link
@@ -82,14 +80,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </ul>
               </div>
               <div>
-                <p className="font-semibold text-sm mb-3 text-gray-800">PassportPhotoSnap</p>
+                <p className="font-semibold text-sm mb-3 text-gray-800">IDPhotoSnap</p>
                 <p className="text-sm text-gray-500">
                   Free passport photo tool. No registration. No watermark. Processed entirely in your browser.
                 </p>
               </div>
             </div>
             <div className="border-t border-gray-200 pt-6 text-center text-xs text-gray-400">
-              © {new Date().getFullYear()} PassportPhotoSnap. All photos are processed locally in your browser.
+              © {new Date().getFullYear()} IDPhotoSnap. All photos are processed locally in your browser.
             </div>
           </div>
         </footer>
