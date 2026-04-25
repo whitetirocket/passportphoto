@@ -26,9 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
         <header className="border-b border-gray-100 bg-white sticky top-0 z-50">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4">
             <Logo />
-            <nav className="hidden md:flex items-center gap-1 flex-wrap">
+            <nav className="hidden md:flex items-center gap-1 flex-wrap justify-center flex-1">
               {countries.map((c) => (
                 <Link
                   key={c.id}
