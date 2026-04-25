@@ -115,16 +115,61 @@ async function fillBackgroundMediaPipe(imageUrl: string, targetHex: string): Pro
       seg.setOptions({ modelSelection: 1 })
 
       seg.onResults((results: { segmentationMask: CanvasImageSource }) => {
-        // Step 1: cut out person using mask as alpha (destination-in)
+        // Step 1: get raw mask pixel data
+        const maskCanvas = document.createElement('canvas')
+        maskCanvas.width = w
+        maskCanvas.height = h
+        const maskCtx = maskCanvas.getContext('2d')!
+        maskCtx.drawImage(results.segmentationMask, 0, 0, w, h)
+        const maskImageData = maskCtx.getImageData(0, 0, w, h)
+        const md = maskImageData.data
+
+        // Step 2: erode mask by 2px (2 passes of 4-neighbor erosion)
+        // removes fringe pixels at person/background boundary
+        const orig = new Uint8Array(w * h)
+        for (let i = 0; i < w * h; i++) orig[i] = md[i * 4]
+
+        for (let pass = 0; pass < 2; pass++) {
+          const prev = orig.slice()
+          for (let y = 0; y < h; y++) {
+            for (let x = 0; x < w; x++) {
+              const i = y * w + x
+              if (prev[i] < 128) continue
+              const edge =
+                (x > 0     && prev[i - 1] < 128) ||
+                (x < w - 1 && prev[i + 1] < 128) ||
+                (y > 0     && prev[i - w] < 128) ||
+                (y < h - 1 && prev[i + w] < 128)
+              if (edge) orig[i] = 0
+            }
+          }
+        }
+
+        // Write eroded values back to all channels
+        for (let i = 0; i < w * h; i++) {
+          const v = orig[i] >= 128 ? 255 : 0
+          md[i * 4] = md[i * 4 + 1] = md[i * 4 + 2] = md[i * 4 + 3] = v
+        }
+        maskCtx.putImageData(maskImageData, 0, 0)
+
+        // Step 3: soft blur on mask edge (0.5px) to avoid hard pixel staircase
+        const softCanvas = document.createElement('canvas')
+        softCanvas.width = w
+        softCanvas.height = h
+        const softCtx = softCanvas.getContext('2d')!
+        softCtx.filter = 'blur(0.5px)'
+        softCtx.drawImage(maskCanvas, 0, 0)
+
+        // Step 4: cut out person using blurred eroded mask
         const personCanvas = document.createElement('canvas')
         personCanvas.width = w
         personCanvas.height = h
         const personCtx = personCanvas.getContext('2d')!
         personCtx.drawImage(img, 0, 0)
         personCtx.globalCompositeOperation = 'destination-in'
-        personCtx.drawImage(results.segmentationMask, 0, 0, w, h)
+        personCtx.drawImage(softCanvas, 0, 0)
 
-        // Step 2: fill background color, then draw person on top
+        // Step 5: fill background color, draw person on top
         const canvas = document.createElement('canvas')
         canvas.width = w
         canvas.height = h
