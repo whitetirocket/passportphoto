@@ -48,9 +48,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </nav>
             <Link
               href="/remove-background"
-              className="hidden md:flex items-center gap-1.5 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-full transition-colors whitespace-nowrap flex-shrink-0 ml-auto"
+              className="flex items-center gap-1.5 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-full transition-colors whitespace-nowrap flex-shrink-0 ml-auto"
             >
-              🎨 Remove BG
+              🎨 <span className="hidden sm:inline">Remove BG</span><span className="sm:hidden">BG</span>
             </Link>
             <MobileNav />
           </div>
