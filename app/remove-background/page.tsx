@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import PhotoTool from '@/components/PhotoTool'
-import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Remove Passport Photo Background Free — Change to White, Grey or Red',
@@ -123,30 +122,6 @@ export default function RemoveBackgroundPage() {
         </div>
       </section>
 
-      {/* Country links */}
-      <section>
-        <h2 className="text-xl font-bold text-gray-900 mb-4">Make Passport Photos by Country</h2>
-        <div className="flex flex-wrap gap-2">
-          {[
-            { name: 'US Passport Photo', slug: 'us-passport-photo' },
-            { name: 'UK Passport Photo', slug: 'uk-passport-photo' },
-            { name: 'Canada Passport Photo', slug: 'canada-passport-photo' },
-            { name: 'Australia Passport Photo', slug: 'australia-passport-photo' },
-            { name: 'India Passport Photo', slug: 'india-passport-photo' },
-            { name: 'Schengen Visa Photo', slug: 'schengen-visa-photo' },
-            { name: 'Indonesia (Red BG)', slug: 'indonesia-passport-photo' },
-            { name: 'Finland (Grey BG)', slug: 'finland-passport-photo' },
-          ].map((c) => (
-            <Link
-              key={c.slug}
-              href={`/${c.slug}`}
-              className="text-sm text-blue-600 hover:underline border border-blue-200 bg-blue-50 px-3 py-1 rounded-full"
-            >
-              {c.name}
-            </Link>
-          ))}
-        </div>
-      </section>
     </div>
   )
 }
