@@ -16,7 +16,7 @@ const REGIONS = [
     panelBorder: 'border-blue-100',
     dot: 'bg-blue-500',
     badge: 'bg-blue-100 text-blue-700',
-    ids: ['us', 'canada', 'brazil', 'mexico', 'argentina'],
+    ids: ['us', 'canada', 'brazil', 'mexico', 'argentina', 'colombia', 'peru', 'chile'],
   },
   {
     id: 'europe',
@@ -34,6 +34,10 @@ const REGIONS = [
       'sweden', 'norway', 'denmark', 'switzerland', 'austria', 'belgium',
       'portugal', 'netherlands', 'greece', 'hungary', 'romania', 'ukraine',
       'finland', 'russia',
+      'bulgaria', 'croatia', 'czech-republic', 'slovakia', 'slovenia',
+      'estonia', 'latvia', 'lithuania',
+      'serbia', 'bosnia', 'montenegro', 'north-macedonia', 'albania', 'moldova',
+      'belarus', 'georgia', 'armenia', 'azerbaijan',
     ],
   },
   {
@@ -47,7 +51,7 @@ const REGIONS = [
     panelBorder: 'border-amber-100',
     dot: 'bg-amber-500',
     badge: 'bg-amber-100 text-amber-700',
-    ids: ['uae', 'saudi-arabia', 'egypt', 'qatar', 'kuwait', 'israel', 'turkey', 'south-africa', 'nigeria'],
+    ids: ['uae', 'saudi-arabia', 'egypt', 'qatar', 'kuwait', 'israel', 'turkey', 'south-africa', 'nigeria', 'morocco', 'tunisia', 'algeria', 'jordan', 'lebanon', 'kenya'],
   },
   {
     id: 'asia',
@@ -64,6 +68,8 @@ const REGIONS = [
       'india', 'japan', 'china', 'south-korea', 'thailand', 'vietnam',
       'malaysia', 'philippines', 'singapore', 'hong-kong', 'taiwan',
       'pakistan', 'bangladesh', 'indonesia',
+      'kazakhstan', 'uzbekistan', 'kyrgyzstan',
+      'nepal', 'sri-lanka', 'myanmar', 'cambodia',
     ],
   },
   {

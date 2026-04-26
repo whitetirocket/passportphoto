@@ -1843,6 +1843,251 @@ const otherCountries: CountrySpec[] = [
   },
 ]
 
+// ── Eastern Europe (EU/Schengen) ──────────────────────────────────────────
+const easternEuropeCountries: CountrySpec[] = [
+  {
+    id: 'bulgaria', name: 'Bulgaria', flag: '🇧🇬',
+    documents: [
+      { id: 'bulgaria-passport', countryId: 'bulgaria', name: 'Passport', slug: 'bulgaria-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Bulgaria Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Bulgarian passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Bulgaria Passport Photo Maker', faq: shortFaq('Bulgarian Passport', 35, 45, 'plain white') },
+      { id: 'bulgaria-id-card', countryId: 'bulgaria', name: 'ID Card', slug: 'bulgaria-id-card-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Bulgaria ID Card Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Bulgarian ID card photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Bulgaria ID Card Photo Maker', faq: shortFaq('Bulgarian ID Card', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'croatia', name: 'Croatia', flag: '🇭🇷',
+    documents: [
+      { id: 'croatia-passport', countryId: 'croatia', name: 'Passport', slug: 'croatia-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Croatia Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Croatian passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Croatia Passport Photo Maker', faq: shortFaq('Croatian Passport', 35, 45, 'plain white') },
+      { id: 'croatia-id-card', countryId: 'croatia', name: 'ID Card', slug: 'croatia-id-card-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Croatia ID Card Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Croatian national ID card photo for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Croatia ID Card Photo Maker', faq: shortFaq('Croatian ID Card', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'czech-republic', name: 'Czech Republic', flag: '🇨🇿',
+    documents: [
+      { id: 'czech-passport', countryId: 'czech-republic', name: 'Passport', slug: 'czech-republic-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Czech Republic Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Czech passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Czech Republic Passport Photo Maker', faq: shortFaq('Czech Passport', 35, 45, 'plain white') },
+      { id: 'czech-id-card', countryId: 'czech-republic', name: 'ID Card', slug: 'czech-republic-id-card-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Czech Republic ID Card Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Czech national ID card photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Czech Republic ID Card Photo Maker', faq: shortFaq('Czech ID Card', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'slovakia', name: 'Slovakia', flag: '🇸🇰',
+    documents: [
+      { id: 'slovakia-passport', countryId: 'slovakia', name: 'Passport', slug: 'slovakia-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Slovakia Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Slovak passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Slovakia Passport Photo Maker', faq: shortFaq('Slovak Passport', 35, 45, 'plain white') },
+      { id: 'slovakia-id-card', countryId: 'slovakia', name: 'ID Card', slug: 'slovakia-id-card-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Slovakia ID Card Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Slovak national ID card photo for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Slovakia ID Card Photo Maker', faq: shortFaq('Slovak ID Card', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'slovenia', name: 'Slovenia', flag: '🇸🇮',
+    documents: [
+      { id: 'slovenia-passport', countryId: 'slovenia', name: 'Passport', slug: 'slovenia-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Slovenia Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Slovenian passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Slovenia Passport Photo Maker', faq: shortFaq('Slovenian Passport', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'estonia', name: 'Estonia', flag: '🇪🇪',
+    documents: [
+      { id: 'estonia-passport', countryId: 'estonia', name: 'Passport', slug: 'estonia-passport-photo', widthMm: 40, heightMm: 50, widthPx: 472, heightPx: 591, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('40×50 mm'), seoTitle: 'Free Estonia Passport Photo | 40×50mm | No Watermark | Free', seoDescription: 'Create a compliant Estonian passport photo online for free. Correct 40×50mm size, white background. No registration, no watermark.', h1: 'Free Estonia Passport Photo Maker', faq: shortFaq('Estonian Passport', 40, 50, 'plain white') },
+      { id: 'estonia-id-card', countryId: 'estonia', name: 'ID Card', slug: 'estonia-id-card-photo', widthMm: 40, heightMm: 50, widthPx: 472, heightPx: 591, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('40×50 mm'), seoTitle: 'Free Estonia ID Card Photo | 40×50mm | No Watermark | Free', seoDescription: 'Create a compliant Estonian ID card photo for free. Correct 40×50mm size, white background. No registration, no watermark.', h1: 'Free Estonia ID Card Photo Maker', faq: shortFaq('Estonian ID Card', 40, 50, 'plain white') },
+    ],
+  },
+  {
+    id: 'latvia', name: 'Latvia', flag: '🇱🇻',
+    documents: [
+      { id: 'latvia-passport', countryId: 'latvia', name: 'Passport', slug: 'latvia-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Latvia Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Latvian passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Latvia Passport Photo Maker', faq: shortFaq('Latvian Passport', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'lithuania', name: 'Lithuania', flag: '🇱🇹',
+    documents: [
+      { id: 'lithuania-passport', countryId: 'lithuania', name: 'Passport', slug: 'lithuania-passport-photo', widthMm: 40, heightMm: 50, widthPx: 472, heightPx: 591, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('40×50 mm'), seoTitle: 'Free Lithuania Passport Photo | 40×50mm | No Watermark | Free', seoDescription: 'Create a compliant Lithuanian passport photo online for free. Correct 40×50mm size, white background. No registration, no watermark.', h1: 'Free Lithuania Passport Photo Maker', faq: shortFaq('Lithuanian Passport', 40, 50, 'plain white') },
+    ],
+  },
+]
+
+// ── Balkans ───────────────────────────────────────────────────────────────
+const balkanCountries: CountrySpec[] = [
+  {
+    id: 'serbia', name: 'Serbia', flag: '🇷🇸',
+    documents: [
+      { id: 'serbia-passport', countryId: 'serbia', name: 'Passport', slug: 'serbia-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Serbia Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Serbian passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Serbia Passport Photo Maker', faq: shortFaq('Serbian Passport', 35, 45, 'plain white') },
+      { id: 'serbia-id-card', countryId: 'serbia', name: 'ID Card', slug: 'serbia-id-card-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Serbia ID Card Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Serbian national ID card photo for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Serbia ID Card Photo Maker', faq: shortFaq('Serbian ID Card', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'bosnia', name: 'Bosnia & Herzegovina', flag: '🇧🇦',
+    documents: [
+      { id: 'bosnia-passport', countryId: 'bosnia', name: 'Passport', slug: 'bosnia-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Bosnia Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Bosnian passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Bosnia & Herzegovina Passport Photo Maker', faq: shortFaq('Bosnian Passport', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'montenegro', name: 'Montenegro', flag: '🇲🇪',
+    documents: [
+      { id: 'montenegro-passport', countryId: 'montenegro', name: 'Passport', slug: 'montenegro-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Montenegro Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Montenegrin passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Montenegro Passport Photo Maker', faq: shortFaq('Montenegrin Passport', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'north-macedonia', name: 'North Macedonia', flag: '🇲🇰',
+    documents: [
+      { id: 'north-macedonia-passport', countryId: 'north-macedonia', name: 'Passport', slug: 'north-macedonia-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free North Macedonia Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant North Macedonian passport photo for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free North Macedonia Passport Photo Maker', faq: shortFaq('North Macedonian Passport', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'albania', name: 'Albania', flag: '🇦🇱',
+    documents: [
+      { id: 'albania-passport', countryId: 'albania', name: 'Passport', slug: 'albania-passport-photo', widthMm: 40, heightMm: 50, widthPx: 472, heightPx: 591, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('40×50 mm'), seoTitle: 'Free Albania Passport Photo | 40×50mm | No Watermark | Free', seoDescription: 'Create a compliant Albanian passport photo online for free. Correct 40×50mm size, white background. No registration, no watermark.', h1: 'Free Albania Passport Photo Maker', faq: shortFaq('Albanian Passport', 40, 50, 'plain white') },
+    ],
+  },
+  {
+    id: 'moldova', name: 'Moldova', flag: '🇲🇩',
+    documents: [
+      { id: 'moldova-passport', countryId: 'moldova', name: 'Passport', slug: 'moldova-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Moldova Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Moldovan passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Moldova Passport Photo Maker', faq: shortFaq('Moldovan Passport', 35, 45, 'plain white') },
+    ],
+  },
+]
+
+// ── Former USSR / CIS ─────────────────────────────────────────────────────
+const cisCountries: CountrySpec[] = [
+  {
+    id: 'kazakhstan', name: 'Kazakhstan', flag: '🇰🇿',
+    documents: [
+      { id: 'kazakhstan-passport', countryId: 'kazakhstan', name: 'Passport', slug: 'kazakhstan-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Kazakhstan Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Kazakhstani passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Kazakhstan Passport Photo Maker', faq: shortFaq('Kazakhstani Passport', 35, 45, 'plain white') },
+      { id: 'kazakhstan-id-card', countryId: 'kazakhstan', name: 'ID Card', slug: 'kazakhstan-id-card-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Kazakhstan ID Card Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Kazakhstani national ID card photo for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Kazakhstan ID Card Photo Maker', faq: shortFaq('Kazakhstani ID Card', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'belarus', name: 'Belarus', flag: '🇧🇾',
+    documents: [
+      { id: 'belarus-passport', countryId: 'belarus', name: 'Passport', slug: 'belarus-passport-photo', widthMm: 40, heightMm: 50, widthPx: 472, heightPx: 591, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('40×50 mm'), seoTitle: 'Free Belarus Passport Photo | 40×50mm | No Watermark | Free', seoDescription: 'Create a compliant Belarusian passport photo online for free. Correct 40×50mm size, white background. No registration, no watermark.', h1: 'Free Belarus Passport Photo Maker', faq: shortFaq('Belarusian Passport', 40, 50, 'plain white') },
+    ],
+  },
+  {
+    id: 'georgia', name: 'Georgia', flag: '🇬🇪',
+    documents: [
+      { id: 'georgia-passport', countryId: 'georgia', name: 'Passport', slug: 'georgia-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Georgia Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Georgian passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Georgia Passport Photo Maker', faq: shortFaq('Georgian Passport', 35, 45, 'plain white') },
+      { id: 'georgia-visa', countryId: 'georgia', name: 'Visa', slug: 'georgia-visa-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Georgia Visa Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Georgian visa photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Georgia Visa Photo Maker', faq: shortFaq('Georgia Visa', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'armenia', name: 'Armenia', flag: '🇦🇲',
+    documents: [
+      { id: 'armenia-passport', countryId: 'armenia', name: 'Passport', slug: 'armenia-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Armenia Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Armenian passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Armenia Passport Photo Maker', faq: shortFaq('Armenian Passport', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'azerbaijan', name: 'Azerbaijan', flag: '🇦🇿',
+    documents: [
+      { id: 'azerbaijan-passport', countryId: 'azerbaijan', name: 'Passport', slug: 'azerbaijan-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Azerbaijan Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Azerbaijani passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Azerbaijan Passport Photo Maker', faq: shortFaq('Azerbaijani Passport', 35, 45, 'plain white') },
+      { id: 'azerbaijan-visa', countryId: 'azerbaijan', name: 'Visa', slug: 'azerbaijan-visa-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Azerbaijan Visa Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Azerbaijani visa photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Azerbaijan Visa Photo Maker', faq: shortFaq('Azerbaijan Visa', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'uzbekistan', name: 'Uzbekistan', flag: '🇺🇿',
+    documents: [
+      { id: 'uzbekistan-passport', countryId: 'uzbekistan', name: 'Passport', slug: 'uzbekistan-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Uzbekistan Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Uzbekistani passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Uzbekistan Passport Photo Maker', faq: shortFaq('Uzbekistani Passport', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'kyrgyzstan', name: 'Kyrgyzstan', flag: '🇰🇬',
+    documents: [
+      { id: 'kyrgyzstan-passport', countryId: 'kyrgyzstan', name: 'Passport', slug: 'kyrgyzstan-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Kyrgyzstan Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Kyrgyzstani passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Kyrgyzstan Passport Photo Maker', faq: shortFaq('Kyrgyzstani Passport', 35, 45, 'plain white') },
+    ],
+  },
+]
+
+// ── North Africa / MENA additions ─────────────────────────────────────────
+const northAfricaCountries: CountrySpec[] = [
+  {
+    id: 'morocco', name: 'Morocco', flag: '🇲🇦',
+    documents: [
+      { id: 'morocco-passport', countryId: 'morocco', name: 'Passport', slug: 'morocco-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Morocco Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Moroccan passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Morocco Passport Photo Maker', faq: shortFaq('Moroccan Passport', 35, 45, 'plain white') },
+      { id: 'morocco-visa', countryId: 'morocco', name: 'Visa', slug: 'morocco-visa-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Morocco Visa Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Moroccan visa photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Morocco Visa Photo Maker', faq: shortFaq('Morocco Visa', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'tunisia', name: 'Tunisia', flag: '🇹🇳',
+    documents: [
+      { id: 'tunisia-passport', countryId: 'tunisia', name: 'Passport', slug: 'tunisia-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Tunisia Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Tunisian passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Tunisia Passport Photo Maker', faq: shortFaq('Tunisian Passport', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'algeria', name: 'Algeria', flag: '🇩🇿',
+    documents: [
+      { id: 'algeria-passport', countryId: 'algeria', name: 'Passport', slug: 'algeria-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Algeria Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Algerian passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Algeria Passport Photo Maker', faq: shortFaq('Algerian Passport', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'jordan', name: 'Jordan', flag: '🇯🇴',
+    documents: [
+      { id: 'jordan-passport', countryId: 'jordan', name: 'Passport', slug: 'jordan-passport-photo', widthMm: 40, heightMm: 60, widthPx: 472, heightPx: 709, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('40×60 mm'), seoTitle: 'Free Jordan Passport Photo | 40×60mm | No Watermark | Free', seoDescription: 'Create a compliant Jordanian passport photo online for free. Correct 40×60mm size, white background. No registration, no watermark.', h1: 'Free Jordan Passport Photo Maker', faq: shortFaq('Jordanian Passport', 40, 60, 'plain white') },
+      { id: 'jordan-visa', countryId: 'jordan', name: 'Visa', slug: 'jordan-visa-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Jordan Visa Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Jordanian visa photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Jordan Visa Photo Maker', faq: shortFaq('Jordan Visa', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'lebanon', name: 'Lebanon', flag: '🇱🇧',
+    documents: [
+      { id: 'lebanon-passport', countryId: 'lebanon', name: 'Passport', slug: 'lebanon-passport-photo', widthMm: 40, heightMm: 50, widthPx: 472, heightPx: 591, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('40×50 mm'), seoTitle: 'Free Lebanon Passport Photo | 40×50mm | No Watermark | Free', seoDescription: 'Create a compliant Lebanese passport photo online for free. Correct 40×50mm size, white background. No registration, no watermark.', h1: 'Free Lebanon Passport Photo Maker', faq: shortFaq('Lebanese Passport', 40, 50, 'plain white') },
+    ],
+  },
+  {
+    id: 'kenya', name: 'Kenya', flag: '🇰🇪',
+    documents: [
+      { id: 'kenya-passport', countryId: 'kenya', name: 'Passport', slug: 'kenya-passport-photo', widthMm: 51, heightMm: 51, widthPx: 600, heightPx: 600, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('2×2 inch (51×51 mm)'), seoTitle: 'Free Kenya Passport Photo | 2×2 inch | No Watermark | Free', seoDescription: 'Create a compliant Kenyan passport photo online for free. Correct 2×2 inch (51×51mm) size, white background. No registration, no watermark.', h1: 'Free Kenya Passport Photo Maker', faq: shortFaq('Kenyan Passport', 51, 51, 'plain white') },
+      { id: 'kenya-evisa', countryId: 'kenya', name: 'eVisa', slug: 'kenya-evisa-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Kenya eVisa Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Kenya eVisa photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Kenya eVisa Photo Maker', faq: shortFaq('Kenya eVisa', 35, 45, 'plain white') },
+    ],
+  },
+]
+
+// ── South & Southeast Asia additions ──────────────────────────────────────
+const southAsiaCountries: CountrySpec[] = [
+  {
+    id: 'nepal', name: 'Nepal', flag: '🇳🇵',
+    documents: [
+      { id: 'nepal-passport', countryId: 'nepal', name: 'Passport', slug: 'nepal-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Nepal Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Nepalese passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Nepal Passport Photo Maker', faq: shortFaq('Nepalese Passport', 35, 45, 'plain white') },
+      { id: 'nepal-visa', countryId: 'nepal', name: 'Visa', slug: 'nepal-visa-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Nepal Visa Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Nepal visa photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Nepal Visa Photo Maker', faq: shortFaq('Nepal Visa', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'sri-lanka', name: 'Sri Lanka', flag: '🇱🇰',
+    documents: [
+      { id: 'sri-lanka-passport', countryId: 'sri-lanka', name: 'Passport', slug: 'sri-lanka-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Sri Lanka Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Sri Lankan passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Sri Lanka Passport Photo Maker', faq: shortFaq('Sri Lankan Passport', 35, 45, 'plain white') },
+      { id: 'sri-lanka-visa', countryId: 'sri-lanka', name: 'eVisa / ETA', slug: 'sri-lanka-visa-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Sri Lanka eVisa / ETA Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Sri Lanka eVisa or ETA photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Sri Lanka eVisa / ETA Photo Maker', faq: shortFaq('Sri Lanka eVisa/ETA', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'myanmar', name: 'Myanmar', flag: '🇲🇲',
+    documents: [
+      { id: 'myanmar-passport', countryId: 'myanmar', name: 'Passport', slug: 'myanmar-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Myanmar Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Myanmar passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Myanmar Passport Photo Maker', faq: shortFaq('Myanmar Passport', 35, 45, 'plain white') },
+      { id: 'myanmar-visa', countryId: 'myanmar', name: 'eVisa', slug: 'myanmar-evisa-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Myanmar eVisa Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Myanmar eVisa photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Myanmar eVisa Photo Maker', faq: shortFaq('Myanmar eVisa', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'cambodia', name: 'Cambodia', flag: '🇰🇭',
+    documents: [
+      { id: 'cambodia-passport', countryId: 'cambodia', name: 'Passport', slug: 'cambodia-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Cambodia Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Cambodian passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Cambodia Passport Photo Maker', faq: shortFaq('Cambodian Passport', 35, 45, 'plain white') },
+      { id: 'cambodia-evisa', countryId: 'cambodia', name: 'eVisa', slug: 'cambodia-evisa-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Cambodia eVisa Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Cambodia eVisa photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Cambodia eVisa Photo Maker', faq: shortFaq('Cambodia eVisa', 35, 45, 'plain white') },
+    ],
+  },
+]
+
+// ── Latin America additions ───────────────────────────────────────────────
+const latinAmericaCountries: CountrySpec[] = [
+  {
+    id: 'colombia', name: 'Colombia', flag: '🇨🇴',
+    documents: [
+      { id: 'colombia-passport', countryId: 'colombia', name: 'Passport', slug: 'colombia-passport-photo', widthMm: 30, heightMm: 40, widthPx: 354, heightPx: 472, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('30×40 mm'), seoTitle: 'Free Colombia Passport Photo | 30×40mm | No Watermark | Free', seoDescription: 'Create a compliant Colombian passport photo online for free. Correct 30×40mm size, white background. No registration, no watermark.', h1: 'Free Colombia Passport Photo Maker', faq: shortFaq('Colombian Passport', 30, 40, 'plain white') },
+      { id: 'colombia-visa', countryId: 'colombia', name: 'Visa', slug: 'colombia-visa-photo', widthMm: 30, heightMm: 40, widthPx: 354, heightPx: 472, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('30×40 mm'), seoTitle: 'Free Colombia Visa Photo | 30×40mm | No Watermark | Free', seoDescription: 'Create a compliant Colombian visa photo online for free. Correct 30×40mm size, white background. No registration, no watermark.', h1: 'Free Colombia Visa Photo Maker', faq: shortFaq('Colombia Visa', 30, 40, 'plain white') },
+    ],
+  },
+  {
+    id: 'peru', name: 'Peru', flag: '🇵🇪',
+    documents: [
+      { id: 'peru-passport', countryId: 'peru', name: 'Passport', slug: 'peru-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Peru Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Peruvian passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Peru Passport Photo Maker', faq: shortFaq('Peruvian Passport', 35, 45, 'plain white') },
+    ],
+  },
+  {
+    id: 'chile', name: 'Chile', flag: '🇨🇱',
+    documents: [
+      { id: 'chile-passport', countryId: 'chile', name: 'Passport', slug: 'chile-passport-photo', widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300, background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White', requirements: reqW('35×45 mm'), seoTitle: 'Free Chile Passport Photo | 35×45mm | No Watermark | Free', seoDescription: 'Create a compliant Chilean passport photo online for free. Correct 35×45mm size, white background. No registration, no watermark.', h1: 'Free Chile Passport Photo Maker', faq: shortFaq('Chilean Passport', 35, 45, 'plain white') },
+    ],
+  },
+]
+
 export const allCountries = [
   ...countries,
   ...extraCountries,
@@ -1851,6 +2096,12 @@ export const allCountries = [
   ...middleEastAfricaCountries,
   ...asiaCountries,
   ...otherCountries,
+  ...easternEuropeCountries,
+  ...balkanCountries,
+  ...cisCountries,
+  ...northAfricaCountries,
+  ...southAsiaCountries,
+  ...latinAmericaCountries,
 ]
 
 export const allDocuments: DocumentSpec[] = allCountries.flatMap((c) => c.documents)
