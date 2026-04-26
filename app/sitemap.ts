@@ -1,11 +1,11 @@
 import type { MetadataRoute } from 'next'
-import { allCountries } from '@/lib/countries'
+import { allDocuments } from '@/lib/countries'
 
 const BASE_URL = 'https://idphotosnap.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const countryPages = allCountries.map((c) => ({
-    url: `${BASE_URL}/${c.slug}`,
+  const documentPages = allDocuments.map((d) => ({
+    url: `${BASE_URL}/${d.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/about`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.4 },
     { url: `${BASE_URL}/privacy`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.3 },
     { url: `${BASE_URL}/terms`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.3 },
-    ...countryPages,
+    ...documentPages,
     ...blogPosts,
   ]
 }

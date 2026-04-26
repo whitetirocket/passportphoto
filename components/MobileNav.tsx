@@ -31,7 +31,7 @@ export default function MobileNav() {
             {countries.map((c) => (
               <Link
                 key={c.id}
-                href={`/${c.slug}`}
+                href={`/${c.documents[0].slug}`}
                 onClick={() => setOpen(false)}
                 className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
               >

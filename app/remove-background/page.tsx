@@ -60,7 +60,7 @@ export default function RemoveBackgroundPage() {
 
       {/* Tool */}
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-10 mb-12">
-        <PhotoTool initialCountryId="us" />
+        <PhotoTool initialDocumentId="us-passport" />
       </div>
 
       {/* Background colors by country */}

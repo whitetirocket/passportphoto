@@ -39,18 +39,21 @@ export default function Post() {
                 </tr>
               </thead>
               <tbody>
-                {allCountries.map((c, i) => (
-                  <tr key={c.id} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                    <td className="py-3 px-3 border border-gray-200">{c.flag} {c.name}</td>
-                    <td className="py-3 px-3 border border-gray-200">{c.widthMm}×{c.heightMm}</td>
-                    <td className="py-3 px-3 border border-gray-200">{c.background}</td>
-                    <td className="py-3 px-3 border border-gray-200">
-                      <Link href={`/${c.slug}`} className="text-blue-600 hover:underline text-xs">
-                        Make photo →
-                      </Link>
-                    </td>
-                  </tr>
-                ))}
+                {allCountries.map((c, i) => {
+                  const d = c.documents[0]
+                  return (
+                    <tr key={c.id} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                      <td className="py-3 px-3 border border-gray-200">{c.flag} {c.name}</td>
+                      <td className="py-3 px-3 border border-gray-200">{d.widthMm}×{d.heightMm}</td>
+                      <td className="py-3 px-3 border border-gray-200">{d.background}</td>
+                      <td className="py-3 px-3 border border-gray-200">
+                        <Link href={`/${d.slug}`} className="text-blue-600 hover:underline text-xs">
+                          Make photo →
+                        </Link>
+                      </td>
+                    </tr>
+                  )
+                })}
               </tbody>
             </table>
           </div>
@@ -59,26 +62,29 @@ export default function Post() {
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Country-by-Country Details</h2>
           <div className="space-y-6">
-            {allCountries.map((c) => (
-              <div key={c.id} className="border border-gray-200 rounded-xl p-5">
-                <h3 className="text-lg font-bold text-gray-900 mb-3">
-                  {c.flag} {c.name} — {c.widthMm}×{c.heightMm}mm
-                </h3>
-                <ul className="space-y-1">
-                  {c.requirements.slice(0, 5).map((req, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm">
-                      <span className="text-green-500 mt-0.5">✓</span>
-                      <span>{req}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-3">
-                  <Link href={`/${c.slug}`} className="text-sm text-blue-600 hover:underline">
-                    Create {c.name} passport photo →
-                  </Link>
+            {allCountries.map((c) => {
+              const d = c.documents[0]
+              return (
+                <div key={c.id} className="border border-gray-200 rounded-xl p-5">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">
+                    {c.flag} {c.name} — {d.widthMm}×{d.heightMm}mm
+                  </h3>
+                  <ul className="space-y-1">
+                    {d.requirements.slice(0, 5).map((req, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm">
+                        <span className="text-green-500 mt-0.5">✓</span>
+                        <span>{req}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-3">
+                    <Link href={`/${d.slug}`} className="text-sm text-blue-600 hover:underline">
+                      Create {c.name} passport photo →
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </section>
 

@@ -1,7 +1,6 @@
 import PhotoTool from '@/components/PhotoTool'
 import AdUnit from '@/components/AdUnit'
-import Link from 'next/link'
-import { allCountries as countries } from '@/lib/countries'
+import ContinentBrowser from '@/components/ContinentBrowser'
 
 export default function Home() {
   return (
@@ -30,7 +29,7 @@ export default function Home() {
 
       {/* Main tool */}
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-10 mb-12">
-        <PhotoTool initialCountryId="us" />
+        <PhotoTool initialDocumentId="us-passport" />
       </div>
 
       {/* Ad — responsive */}
@@ -38,24 +37,9 @@ export default function Home() {
         <AdUnit format="responsive" />
       </div>
 
-      {/* Country cards */}
+      {/* Continent browser */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-gray-900 text-center mb-6">
-          Supported Countries &amp; Documents
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
-          {countries.map((c) => (
-            <Link
-              key={c.id}
-              href={`/${c.slug}`}
-              className="flex flex-col items-center gap-1 p-4 rounded-xl border border-gray-100 hover:border-blue-300 hover:bg-blue-50 transition-all text-center group"
-            >
-              <span className="text-3xl">{c.flag}</span>
-              <span className="text-sm font-medium text-gray-700 group-hover:text-blue-700">{c.name}</span>
-              <span className="text-xs text-gray-400">{c.widthMm}×{c.heightMm}mm</span>
-            </Link>
-          ))}
-        </div>
+        <ContinentBrowser />
       </section>
 
       {/* How it works */}

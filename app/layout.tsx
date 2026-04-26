@@ -3,9 +3,10 @@ import Script from 'next/script'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
-import { allCountries as countries } from '@/lib/countries'
+import { allCountries } from '@/lib/countries'
 import MobileNav from '@/components/MobileNav'
 import Logo from '@/components/Logo'
+import CountriesDropdown from '@/components/CountriesDropdown'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,22 +35,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       `}</Script>
       <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
         <header className="border-b border-gray-100 bg-white sticky top-0 z-50">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-2">
             <Logo />
-            <nav className="hidden md:flex items-center gap-1 flex-wrap justify-center flex-1">
-              {countries.map((c) => (
-                <Link
-                  key={c.id}
-                  href={`/${c.slug}`}
-                  className="text-sm text-gray-600 hover:text-blue-600 px-3 py-1 rounded-full hover:bg-blue-50 transition-colors"
-                >
-                  {c.flag} {c.name}
-                </Link>
-              ))}
+            <nav className="hidden md:flex items-center gap-1 flex-1 ml-4">
+              <CountriesDropdown />
+              <Link href="/blog" className="text-sm font-medium text-gray-600 hover:text-blue-600 px-3 py-1.5 rounded-lg hover:bg-gray-50 transition-colors">
+                Blog
+              </Link>
+              <Link href="/about" className="text-sm font-medium text-gray-600 hover:text-blue-600 px-3 py-1.5 rounded-lg hover:bg-gray-50 transition-colors">
+                About
+              </Link>
             </nav>
             <Link
               href="/remove-background"
-              className="hidden md:flex items-center gap-1.5 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-full transition-colors whitespace-nowrap flex-shrink-0"
+              className="hidden md:flex items-center gap-1.5 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-full transition-colors whitespace-nowrap flex-shrink-0 ml-auto"
             >
               🎨 Remove BG
             </Link>
@@ -63,27 +62,33 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-6xl mx-auto px-4 py-10">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
               <div>
-                <p className="font-semibold text-sm mb-3 text-gray-800">Passport Photos</p>
+                <p className="font-semibold text-sm mb-3 text-gray-800">Popular</p>
                 <ul className="space-y-1">
-                  {countries.slice(0, 4).map((c) => (
-                    <li key={c.id}>
-                      <Link href={`/${c.slug}`} className="text-sm text-gray-500 hover:text-blue-600">
-                        {c.flag} {c.name}
-                      </Link>
-                    </li>
-                  ))}
+                  {['us', 'uk', 'canada', 'australia', 'india', 'schengen', 'germany', 'france'].map((id) => {
+                    const c = allCountries.find((x) => x.id === id)
+                    return c ? (
+                      <li key={c.id}>
+                        <Link href={`/${c.documents[0].slug}`} className="text-sm text-gray-500 hover:text-blue-600">
+                          {c.flag} {c.name}
+                        </Link>
+                      </li>
+                    ) : null
+                  })}
                 </ul>
               </div>
               <div>
-                <p className="font-semibold text-sm mb-3 text-gray-800">More Countries</p>
+                <p className="font-semibold text-sm mb-3 text-gray-800">Asia & Middle East</p>
                 <ul className="space-y-1">
-                  {countries.slice(4).map((c) => (
-                    <li key={c.id}>
-                      <Link href={`/${c.slug}`} className="text-sm text-gray-500 hover:text-blue-600">
-                        {c.flag} {c.name}
-                      </Link>
-                    </li>
-                  ))}
+                  {['japan', 'south-korea', 'china', 'india', 'singapore', 'malaysia', 'thailand', 'uae'].map((id) => {
+                    const c = allCountries.find((x) => x.id === id)
+                    return c ? (
+                      <li key={c.id}>
+                        <Link href={`/${c.documents[0].slug}`} className="text-sm text-gray-500 hover:text-blue-600">
+                          {c.flag} {c.name}
+                        </Link>
+                      </li>
+                    ) : null
+                  })}
                 </ul>
               </div>
               <div>
@@ -91,6 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <ul className="space-y-1">
                   <li><Link href="/remove-background" className="text-sm text-gray-500 hover:text-blue-600">Remove Background</Link></li>
                   <li><Link href="/blog" className="text-sm text-gray-500 hover:text-blue-600">Guides & Tips</Link></li>
+                  <li><Link href="/about" className="text-sm text-gray-500 hover:text-blue-600">About</Link></li>
                 </ul>
               </div>
               <div>
@@ -99,11 +105,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <li><Link href="/privacy" className="text-sm text-gray-500 hover:text-blue-600">Privacy Policy</Link></li>
                   <li><Link href="/terms" className="text-sm text-gray-500 hover:text-blue-600">Terms of Use</Link></li>
                 </ul>
-              </div>
-              <div>
-                <p className="font-semibold text-sm mb-3 text-gray-800">IDPhotoSnap</p>
+                <p className="font-semibold text-sm mt-4 mb-2 text-gray-800">IDPhotoSnap</p>
                 <p className="text-sm text-gray-500">
-                  Free passport photo tool. No registration. No watermark. Processed entirely in your browser.
+                  Free. No registration. No watermark. Processed entirely in your browser.
                 </p>
               </div>
             </div>

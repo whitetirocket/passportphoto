@@ -1,10 +1,10 @@
 import type { PixelCrop } from 'react-image-crop'
-import type { CountrySpec } from './countries'
+import type { DocumentSpec } from './countries'
 
 export async function cropAndResize(
   image: HTMLImageElement,
   crop: PixelCrop,
-  country: CountrySpec
+  country: DocumentSpec
 ): Promise<Blob> {
   const canvas = document.createElement('canvas')
   canvas.width = country.widthPx
@@ -50,7 +50,7 @@ export function downloadBlob(blob: Blob, filename: string) {
   URL.revokeObjectURL(url)
 }
 
-export async function generatePDF(blob: Blob, country: CountrySpec): Promise<void> {
+export async function generatePDF(blob: Blob, country: DocumentSpec): Promise<void> {
   const { jsPDF } = await import('jspdf')
 
   // A4 in mm: 210 x 297

@@ -3,18 +3,18 @@
 import { useState, useRef, useCallback } from 'react'
 import ReactCrop, { centerCrop, makeAspectCrop, type PixelCrop, type Crop } from 'react-image-crop'
 import 'react-image-crop/dist/ReactCrop.css'
-import type { CountrySpec } from '@/lib/countries'
+import type { DocumentSpec } from '@/lib/countries'
 import { cropAndResize, downloadBlob, generatePDF, fillBackground } from '@/lib/imageProcessing'
-import CountrySelector from './CountrySelector'
-import { allCountries as countries } from '@/lib/countries'
+import DocumentSelector from './DocumentSelector'
+import { allDocuments, allCountries } from '@/lib/countries'
 
 interface Props {
-  initialCountryId?: string
+  initialDocumentId?: string
 }
 
-export default function PhotoTool({ initialCountryId = 'us' }: Props) {
-  const [country, setCountry] = useState<CountrySpec>(
-    countries.find((c) => c.id === initialCountryId) ?? countries[0]
+export default function PhotoTool({ initialDocumentId = 'us-passport' }: Props) {
+  const [doc, setDoc] = useState<DocumentSpec>(
+    allDocuments.find((d) => d.id === initialDocumentId) ?? allDocuments[0]
   )
   const [imgSrc, setImgSrc] = useState<string>('')
   const [crop, setCrop] = useState<Crop>()
@@ -22,11 +22,11 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
   const [processing, setProcessing] = useState(false)
   const [previewUrl, setPreviewUrl] = useState<string>('')
   const [bgRemoving, setBgRemoving] = useState(false)
-  const [bgProgress, setBgProgress] = useState('')
   const [bgDone, setBgDone] = useState(false)
   const imgRef = useRef<HTMLImageElement>(null)
 
-  const aspect = country.widthPx / country.heightPx
+  const country = allCountries.find((c) => c.id === doc.countryId)!
+  const aspect = doc.widthPx / doc.heightPx
 
   const onFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
@@ -60,7 +60,7 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
     if (!imgSrc || bgRemoving) return
     setBgRemoving(true)
     try {
-      const result = await fillBackground(imgSrc, country.bgColor)
+      const result = await fillBackground(imgSrc, doc.bgColor)
       setImgSrc(result)
       setCrop(undefined)
       setCompletedCrop(undefined)
@@ -85,8 +85,8 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
     [aspect]
   )
 
-  const handleCountryChange = (c: CountrySpec) => {
-    setCountry(c)
+  const handleDocumentChange = (d: DocumentSpec) => {
+    setDoc(d)
     setPreviewUrl('')
     setCrop(undefined)
     setCompletedCrop(undefined)
@@ -94,7 +94,7 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
 
   const processImage = async (): Promise<Blob | null> => {
     if (!imgRef.current || !completedCrop) return null
-    return await cropAndResize(imgRef.current, completedCrop, country)
+    return await cropAndResize(imgRef.current, completedCrop, doc)
   }
 
   const handleDownloadJpg = async () => {
@@ -104,7 +104,7 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
       if (!blob) return
       const url = URL.createObjectURL(blob)
       setPreviewUrl(url)
-      downloadBlob(blob, `${country.id}-passport-photo.jpg`)
+      downloadBlob(blob, `${doc.countryId}-${doc.name.toLowerCase().replace(/\s+/g, '-')}-photo.jpg`)
     } finally {
       setProcessing(false)
     }
@@ -117,7 +117,7 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
       if (!blob) return
       const url = URL.createObjectURL(blob)
       setPreviewUrl(url)
-      await generatePDF(blob, country)
+      await generatePDF(blob, doc)
     } finally {
       setProcessing(false)
     }
@@ -128,16 +128,16 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
 
   return (
     <div className="w-full max-w-4xl mx-auto">
-      {/* Country selector */}
+      {/* Document selector */}
       <div className="mb-6">
-        <p className="text-sm text-gray-500 text-center mb-3">Select your country or document type:</p>
-        <CountrySelector selected={country} onChange={handleCountryChange} />
+        <p className="text-sm text-gray-500 text-center mb-3">Select your country and document type:</p>
+        <DocumentSelector selectedDocument={doc} onChange={handleDocumentChange} />
       </div>
 
       {/* Specs badge */}
       <div className="flex justify-center mb-6">
         <span className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 text-sm px-4 py-1.5 rounded-full border border-blue-200">
-          {country.flag} {country.name} — {country.widthMm}×{country.heightMm}mm ({country.widthPx}×{country.heightPx}px)
+          {country.flag} {country.name} — {doc.name} — {doc.widthMm}×{doc.heightMm}mm ({doc.widthPx}×{doc.heightPx}px)
         </span>
       </div>
 
@@ -174,7 +174,7 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
             {bgDone ? (
               <div className="flex items-center gap-2 text-sm text-green-700 bg-green-50 border border-green-200 px-5 py-2 rounded-full">
                 <span>✓</span>
-                <span>{country.bgColorLabel} background applied — now crop your photo</span>
+                <span>{doc.bgColorLabel} background applied — now crop your photo</span>
                 <button
                   onClick={() => setBgDone(false)}
                   className="text-xs text-gray-400 hover:text-gray-600 ml-1"
@@ -185,7 +185,7 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
                 onClick={handleFillBackground}
                 disabled={bgRemoving}
                 className="flex items-center gap-2 text-white px-6 py-2.5 rounded-full text-sm font-medium disabled:opacity-70 disabled:cursor-not-allowed transition-colors shadow-sm"
-                style={{ backgroundColor: country.bgColor === '#ffffff' ? '#6366f1' : country.bgColor }}
+                style={{ backgroundColor: doc.bgColor === '#ffffff' ? '#6366f1' : doc.bgColor }}
               >
                 {bgRemoving ? (
                   <>
@@ -198,10 +198,10 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
                 ) : (
                   <>
                     <span>🎨</span>
-                    <span>Fill {country.bgColorLabel} Background</span>
+                    <span>Fill {doc.bgColorLabel} Background</span>
                     <span
                       className="inline-block w-4 h-4 rounded-full border border-white/40"
-                      style={{ backgroundColor: country.bgColor }}
+                      style={{ backgroundColor: doc.bgColor }}
                     />
                   </>
                 )}
@@ -230,7 +230,7 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
           </div>
 
           <p className="text-center text-sm text-gray-500">
-            Drag the handles to adjust the crop area. The aspect ratio is locked to {country.widthMm}×{country.heightMm}mm.
+            Drag the handles to adjust the crop area. The aspect ratio is locked to {doc.widthMm}×{doc.heightMm}mm.
           </p>
 
           {/* Download buttons */}
@@ -276,10 +276,10 @@ export default function PhotoTool({ initialCountryId = 'us' }: Props) {
                 <img
                   src={previewUrl}
                   alt="Preview"
-                  style={{ width: country.widthMm * 2, height: country.heightMm * 2 }}
+                  style={{ width: doc.widthMm * 2, height: doc.heightMm * 2 }}
                   className="border border-gray-200 rounded shadow"
                 />
-                <p className="text-xs text-gray-400 mt-1">{country.widthMm}×{country.heightMm}mm</p>
+                <p className="text-xs text-gray-400 mt-1">{doc.widthMm}×{doc.heightMm}mm</p>
               </div>
             </div>
           )}

@@ -55,7 +55,7 @@ export default function AboutPage() {
             {countries.map((c) => (
               <Link
                 key={c.id}
-                href={`/${c.slug}`}
+                href={`/${c.documents[0].slug}`}
                 className="flex items-center gap-2 text-sm text-blue-600 hover:underline"
               >
                 <span>{c.flag}</span>
