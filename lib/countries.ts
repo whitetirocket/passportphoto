@@ -1781,14 +1781,14 @@ const asiaCountries: CountrySpec[] = [
     documents: [
       {
         id: 'bangladesh-passport', countryId: 'bangladesh', name: 'Passport', slug: 'bangladesh-passport-photo',
-        widthMm: 40, heightMm: 50, widthPx: 472, heightPx: 591, dpi: 300,
+        widthMm: 45, heightMm: 55, widthPx: 531, heightPx: 650, dpi: 300,
         background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White',
-        requirements: reqW('40×50 mm'),
-        seoTitle: 'Free Bangladesh Passport Photo Maker | 40×50mm | No Watermark | Free',
-        seoDescription: 'Create a compliant Bangladeshi passport photo online for free. Correct 40×50mm size, white background. No registration, no watermark.',
+        requirements: reqW('45×55 mm'),
+        seoTitle: 'Free Bangladesh Passport Photo Maker | 45×55mm | No Watermark | Free',
+        seoDescription: 'Create a compliant Bangladeshi passport photo online for free. Correct 45×55mm size, white background. No registration, no watermark.',
         h1: 'Free Bangladesh Passport Photo Maker',
         faq: [
-          { q: 'What size is a Bangladeshi passport photo?', a: 'Bangladeshi passport photos must be 40×50mm with a plain white background.' },
+          { q: 'What size is a Bangladeshi passport photo?', a: 'Bangladeshi passport photos must be 45×55mm with a plain white background.' },
           { q: 'Can I wear glasses?', a: 'No. Bangladesh Department of Immigration & Passports does not accept photos with glasses.' },
           { q: 'Is my photo uploaded to your servers?', a: 'No. All processing happens in your browser. Your photo never leaves your device.' },
         ],
