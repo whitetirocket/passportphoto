@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-labelledby="title">
+  <title id="title">Lighting setup diagram for passport photo</title>
+  <rect width="800" height="450" fill="#f8fafc"/>
+  <!-- Wall -->
+  <rect x="50" y="60" width="700" height="320" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="400" y="50" text-anchor="middle" fill="#475569" font-family="-apple-system,Inter,sans-serif" font-size="14" font-weight="600">PLAIN WHITE WALL</text>
+  <!-- Window -->
+  <g transform="translate(80,170)">
+    <rect width="80" height="140" fill="#fef9c3" stroke="#fbbf24" stroke-width="4" rx="3"/>
+    <line x1="40" y1="0" x2="40" y2="140" stroke="#fbbf24" stroke-width="3"/>
+    <line x1="0" y1="70" x2="80" y2="70" stroke="#fbbf24" stroke-width="3"/>
+    <text x="40" y="160" text-anchor="middle" fill="#92400e" font-family="-apple-system,Inter,sans-serif" font-size="12" font-weight="600">WINDOW</text>
+  </g>
+  <!-- Light rays from window -->
+  <g stroke="#fbbf24" stroke-width="2" opacity="0.5">
+    <line x1="170" y1="200" x2="380" y2="220"/>
+    <line x1="170" y1="240" x2="380" y2="240"/>
+    <line x1="170" y1="280" x2="380" y2="270"/>
+  </g>
+  <!-- Person -->
+  <g transform="translate(360,180)">
+    <circle cx="40" cy="40" r="35" fill="#fed7aa" stroke="#f97316" stroke-width="2"/>
+    <path d="M 0 95 Q 40 70 80 95 L 80 180 L 0 180 Z" fill="#3b82f6"/>
+    <circle cx="32" cy="38" r="2.5" fill="#1e293b"/>
+    <circle cx="48" cy="38" r="2.5" fill="#1e293b"/>
+    <line x1="30" y1="55" x2="50" y2="55" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="40" y="200" text-anchor="middle" fill="#0f172a" font-family="-apple-system,Inter,sans-serif" font-size="12" font-weight="600">YOU</text>
+    <text x="40" y="215" text-anchor="middle" fill="#64748b" font-family="-apple-system,Inter,sans-serif" font-size="10">2-3 ft from wall</text>
+  </g>
+  <!-- Camera -->
+  <g transform="translate(620,200)">
+    <rect x="0" y="0" width="40" height="80" rx="6" fill="#1e293b"/>
+    <rect x="4" y="6" width="32" height="60" rx="3" fill="#0f172a"/>
+    <circle cx="20" cy="30" r="8" fill="#3b82f6"/>
+    <text x="20" y="100" text-anchor="middle" fill="#0f172a" font-family="-apple-system,Inter,sans-serif" font-size="12" font-weight="600">CAMERA</text>
+    <text x="20" y="115" text-anchor="middle" fill="#64748b" font-family="-apple-system,Inter,sans-serif" font-size="10">at eye level</text>
+    <text x="20" y="130" text-anchor="middle" fill="#64748b" font-family="-apple-system,Inter,sans-serif" font-size="10">6 ft from you</text>
+  </g>
+  <!-- Distance markers -->
+  <g stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,3">
+    <line x1="440" y1="290" x2="620" y2="290"/>
+  </g>
+  <text x="530" y="305" text-anchor="middle" fill="#64748b" font-family="-apple-system,Inter,sans-serif" font-size="11" font-style="italic">~6 feet</text>
+  <!-- Title -->
+  <text x="400" y="425" text-anchor="middle" fill="#0f172a" font-family="-apple-system,Inter,sans-serif" font-size="14" font-weight="600">Window in front. Wall behind. Camera at eye level, 6 feet away.</text>
+</svg>

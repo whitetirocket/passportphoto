@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title">
+  <title id="title">Best Free Passport Photo Apps 2026 — comparison</title>
+  <defs>
+    <linearGradient id="bgComp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0fdf4"/>
+      <stop offset="1" stop-color="#dcfce7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgComp)"/>
+  <!-- 5 tool cards -->
+  <g font-family="-apple-system,Inter,sans-serif">
+    <!-- Card 1: IDPhotoSnap (highlighted) -->
+    <g transform="translate(80,140)">
+      <rect width="200" height="280" rx="14" fill="#ffffff" stroke="#22c55e" stroke-width="3"/>
+      <rect x="0" y="0" width="200" height="44" rx="14" fill="#22c55e"/>
+      <rect x="0" y="30" width="200" height="14" fill="#22c55e"/>
+      <text x="100" y="28" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">FREE • PRIVATE</text>
+      <text x="100" y="80" text-anchor="middle" fill="#0f172a" font-size="20" font-weight="800">IDPhotoSnap</text>
+      <text x="100" y="115" text-anchor="middle" fill="#22c55e" font-size="32" font-weight="800">$0</text>
+      <line x1="20" y1="135" x2="180" y2="135" stroke="#e2e8f0"/>
+      <text x="100" y="160" text-anchor="middle" fill="#475569" font-size="12">85+ countries</text>
+      <text x="100" y="180" text-anchor="middle" fill="#475569" font-size="12">No upload</text>
+      <text x="100" y="200" text-anchor="middle" fill="#475569" font-size="12">No watermark</text>
+      <text x="100" y="220" text-anchor="middle" fill="#475569" font-size="12">No signup</text>
+      <text x="100" y="260" text-anchor="middle" fill="#22c55e" font-size="12" font-weight="700">★ Browser-based</text>
+    </g>
+    <!-- Card 2: Passport Photo Online -->
+    <g transform="translate(300,160)">
+      <rect width="180" height="240" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+      <text x="90" y="35" text-anchor="middle" fill="#0f172a" font-size="14" font-weight="700">Passport Photo</text>
+      <text x="90" y="55" text-anchor="middle" fill="#0f172a" font-size="14" font-weight="700">Online</text>
+      <text x="90" y="100" text-anchor="middle" fill="#dc2626" font-size="26" font-weight="800">$10–15</text>
+      <line x1="20" y1="120" x2="160" y2="120" stroke="#e2e8f0"/>
+      <text x="90" y="145" text-anchor="middle" fill="#475569" font-size="11">100+ countries</text>
+      <text x="90" y="165" text-anchor="middle" fill="#dc2626" font-size="11">Server upload</text>
+      <text x="90" y="185" text-anchor="middle" fill="#dc2626" font-size="11">Email required</text>
+      <text x="90" y="215" text-anchor="middle" fill="#94a3b8" font-size="11" font-style="italic">Free preview</text>
+    </g>
+    <!-- Card 3: PhotoAiD -->
+    <g transform="translate(500,160)">
+      <rect width="180" height="240" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+      <text x="90" y="45" text-anchor="middle" fill="#0f172a" font-size="14" font-weight="700">PhotoAiD</text>
+      <text x="90" y="100" text-anchor="middle" fill="#dc2626" font-size="26" font-weight="800">$5–10</text>
+      <line x1="20" y1="120" x2="160" y2="120" stroke="#e2e8f0"/>
+      <text x="90" y="145" text-anchor="middle" fill="#475569" font-size="11">80+ countries</text>
+      <text x="90" y="165" text-anchor="middle" fill="#dc2626" font-size="11">Server upload</text>
+      <text x="90" y="185" text-anchor="middle" fill="#dc2626" font-size="11">Email required</text>
+      <text x="90" y="215" text-anchor="middle" fill="#94a3b8" font-size="11" font-style="italic">Optional print</text>
+    </g>
+    <!-- Card 4: Drugstore -->
+    <g transform="translate(700,160)">
+      <rect width="180" height="240" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+      <text x="90" y="35" text-anchor="middle" fill="#0f172a" font-size="14" font-weight="700">CVS / Walgreens</text>
+      <text x="90" y="55" text-anchor="middle" fill="#94a3b8" font-size="12">Drugstore kiosks</text>
+      <text x="90" y="100" text-anchor="middle" fill="#dc2626" font-size="26" font-weight="800">$15–17</text>
+      <line x1="20" y1="120" x2="160" y2="120" stroke="#e2e8f0"/>
+      <text x="90" y="145" text-anchor="middle" fill="#475569" font-size="11">~5 countries</text>
+      <text x="90" y="165" text-anchor="middle" fill="#dc2626" font-size="11">Old cameras</text>
+      <text x="90" y="185" text-anchor="middle" fill="#dc2626" font-size="11">High reject rate</text>
+      <text x="90" y="215" text-anchor="middle" fill="#94a3b8" font-size="11" font-style="italic">Includes prints</text>
+    </g>
+    <!-- Card 5: Free apps -->
+    <g transform="translate(900,160)">
+      <rect width="180" height="240" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+      <text x="90" y="35" text-anchor="middle" fill="#0f172a" font-size="14" font-weight="700">"Free" apps</text>
+      <text x="90" y="55" text-anchor="middle" fill="#94a3b8" font-size="12">App Store / Play</text>
+      <text x="90" y="100" text-anchor="middle" fill="#dc2626" font-size="22" font-weight="800">$0–20</text>
+      <line x1="20" y1="120" x2="160" y2="120" stroke="#e2e8f0"/>
+      <text x="90" y="145" text-anchor="middle" fill="#475569" font-size="11">Quality varies</text>
+      <text x="90" y="165" text-anchor="middle" fill="#dc2626" font-size="11">Many ads</text>
+      <text x="90" y="185" text-anchor="middle" fill="#dc2626" font-size="11">Hidden paywalls</text>
+      <text x="90" y="215" text-anchor="middle" fill="#94a3b8" font-size="11" font-style="italic">Mixed bag</text>
+    </g>
+  </g>
+  <!-- Title -->
+  <g transform="translate(60,490)">
+    <text x="0" y="0" fill="#0f172a" font-family="-apple-system,Inter,sans-serif" font-size="44" font-weight="800">Best Free Passport Photo Tools 2026</text>
+    <text x="0" y="38" fill="#64748b" font-family="-apple-system,Inter,sans-serif" font-size="20" font-weight="500">An honest comparison — including what each "free" actually costs you</text>
+  </g>
+</svg>

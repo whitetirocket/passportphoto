@@ -1,7 +1,11 @@
 import type { MetadataRoute } from 'next'
 import { allDocuments } from '@/lib/countries'
+import { visiblePosts } from '@/lib/blog-posts'
 
 const BASE_URL = 'https://idphotosnap.com'
+
+// Re-evaluate sitemap every 30 minutes so scheduled posts appear at the right time.
+export const revalidate = 1800
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const documentPages = allDocuments.map((d) => ({
@@ -11,17 +15,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  const blogPosts = [
-    'live-on-product-hunt',
-    'how-to-take-passport-photo-at-home',
-    'passport-photo-requirements-by-country',
-    'can-you-smile-in-passport-photo',
-    'passport-photo-size-guide',
-    'white-background-passport-photo',
-    'print-passport-photo-at-home',
-  ].map((slug) => ({
-    url: `${BASE_URL}/blog/${slug}`,
-    lastModified: new Date(),
+  const blogEntries = visiblePosts().map((p) => ({
+    url: `${BASE_URL}/blog/${p.slug}`,
+    lastModified: new Date(p.publishAt),
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }))
@@ -34,6 +30,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/privacy`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.3 },
     { url: `${BASE_URL}/terms`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.3 },
     ...documentPages,
-    ...blogPosts,
+    ...blogEntries,
   ]
 }

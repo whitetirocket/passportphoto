@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title">
+  <title id="title">How to take a passport photo with iPhone</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="windowLight" cx="0.2" cy="0.5" r="0.8">
+      <stop offset="0" stop-color="#fef9c3" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fef9c3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#windowLight)"/>
+  <!-- Window frame on left -->
+  <g transform="translate(60,140)">
+    <rect width="200" height="350" fill="#fef9c3" stroke="#fbbf24" stroke-width="6" rx="6"/>
+    <line x1="100" y1="0" x2="100" y2="350" stroke="#fbbf24" stroke-width="4"/>
+    <line x1="0" y1="175" x2="200" y2="175" stroke="#fbbf24" stroke-width="4"/>
+    <text x="100" y="395" text-anchor="middle" fill="#475569" font-family="-apple-system,Inter,sans-serif" font-size="20" font-weight="500">Window</text>
+  </g>
+  <!-- Light rays -->
+  <g stroke="#fbbf24" stroke-width="2" opacity="0.4">
+    <line x1="270" y1="200" x2="490" y2="280"/>
+    <line x1="270" y1="270" x2="490" y2="320"/>
+    <line x1="270" y1="340" x2="490" y2="360"/>
+  </g>
+  <!-- Person silhouette -->
+  <g transform="translate(440,180)">
+    <circle cx="80" cy="60" r="55" fill="#fef3c7" stroke="#f59e0b" stroke-width="3"/>
+    <path d="M 20 145 Q 80 110 140 145 L 140 280 L 20 280 Z" fill="#3b82f6"/>
+    <circle cx="65" cy="55" r="4" fill="#1e293b"/>
+    <circle cx="95" cy="55" r="4" fill="#1e293b"/>
+    <line x1="60" y1="80" x2="100" y2="80" stroke="#1e293b" stroke-width="2"/>
+  </g>
+  <!-- Phone on tripod -->
+  <g transform="translate(800,180)">
+    <!-- tripod legs -->
+    <line x1="100" y1="380" x2="40" y2="500" stroke="#475569" stroke-width="6"/>
+    <line x1="100" y1="380" x2="100" y2="500" stroke="#475569" stroke-width="6"/>
+    <line x1="100" y1="380" x2="160" y2="500" stroke="#475569" stroke-width="6"/>
+    <!-- phone -->
+    <rect x="60" y="120" width="80" height="160" rx="14" fill="url(#phoneGrad)" stroke="#0f172a" stroke-width="2"/>
+    <rect x="68" y="135" width="64" height="120" rx="6" fill="#1e293b"/>
+    <!-- camera viewfinder showing person -->
+    <circle cx="100" cy="195" r="22" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="93" cy="190" r="2" fill="#1e293b"/>
+    <circle cx="107" cy="190" r="2" fill="#1e293b"/>
+    <line x1="92" y1="202" x2="108" y2="202" stroke="#1e293b" stroke-width="1"/>
+    <text x="100" y="270" text-anchor="middle" fill="#94a3b8" font-family="-apple-system,Inter,sans-serif" font-size="11" font-weight="500">RECORDING</text>
+  </g>
+  <!-- Title text -->
+  <g transform="translate(60,520)">
+    <text x="0" y="0" fill="#0f172a" font-family="-apple-system,Inter,sans-serif" font-size="48" font-weight="800">iPhone Passport Photo</text>
+    <text x="0" y="40" fill="#64748b" font-family="-apple-system,Inter,sans-serif" font-size="22" font-weight="500">Step-by-step setup that passes the first time</text>
+  </g>
+  <!-- IDPhotoSnap badge -->
+  <g transform="translate(1040,40)">
+    <rect width="120" height="36" rx="18" fill="#3b82f6"/>
+    <text x="60" y="24" text-anchor="middle" fill="#ffffff" font-family="-apple-system,Inter,sans-serif" font-size="14" font-weight="600">IDPhotoSnap</text>
+  </g>
+</svg>
