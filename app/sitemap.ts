@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   const blogPosts = [
+    'live-on-product-hunt',
     'how-to-take-passport-photo-at-home',
     'passport-photo-requirements-by-country',
     'can-you-smile-in-passport-photo',

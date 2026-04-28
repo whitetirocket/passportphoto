@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# backlinks tooling (separate project, contains cookies/tokens)
+/idphotosnap-backlinks/
+/idphotosnap-video/
+/Promo Clips/
+*.PNG

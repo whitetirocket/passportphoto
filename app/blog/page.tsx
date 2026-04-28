@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'live-on-product-hunt',
+    title: "We're Live on Product Hunt Today",
+    description: "After several months of building, IDPhotoSnap is officially on Product Hunt. Here's why we built it, what it does, and what's next on the roadmap.",
+    date: 'April 28, 2026',
+    readTime: '3 min read',
+  },
+  {
     slug: 'how-to-take-passport-photo-at-home',
     title: 'How to Take a Passport Photo at Home (Step-by-Step Guide)',
     description: 'Save $15–20 by taking your own passport photo at home. Here is exactly how to do it right — background, lighting, pose, and common mistakes to avoid.',
