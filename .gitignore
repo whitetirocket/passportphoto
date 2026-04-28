@@ -44,4 +44,7 @@ next-env.d.ts
 /idphotosnap-backlinks/
 /idphotosnap-video/
 /Promo Clips/
-*.PNG
+# Random screenshots in repo root (specific UUIDs and Russian-named files)
+/[A-F0-9]*-[A-F0-9]*-[A-F0-9]*-[A-F0-9]*-[A-F0-9]*.PNG
+/public/ChatGPT*.png
+/public/фавикон.png
