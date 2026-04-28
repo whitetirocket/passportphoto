@@ -78,7 +78,7 @@ export default function Post() {
       <div className="space-y-8 text-gray-700 leading-relaxed">
         <p className="text-lg text-gray-600">
           Your iPhone has a better camera than the kiosk at any drugstore. The reason home passport photos
-          get rejected is rarely the camera — it&apos;s the setup, the framing, and the crop. This guide
+          get rejected is rarely the camera - it&apos;s the setup, the framing, and the crop. This guide
           walks through exactly how to make an iPhone passport photo that passes the first time.
         </p>
 
@@ -86,7 +86,7 @@ export default function Post() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Quick summary</h2>
           <ul className="list-disc pl-6 space-y-1">
             <li><strong>Camera:</strong> any iPhone from the last 6 years works (iPhone X or newer is ideal)</li>
-            <li><strong>Mode:</strong> standard Photo mode at 1x zoom — never Portrait, never zoom in</li>
+            <li><strong>Mode:</strong> standard Photo mode at 1x zoom - never Portrait, never zoom in</li>
             <li><strong>Distance:</strong> 4-5 feet from a plain wall, photographer 6 feet from you</li>
             <li><strong>Lighting:</strong> large window in front of you, no light behind</li>
             <li><strong>Edit:</strong> crop and resize using a country-specific tool</li>
@@ -97,13 +97,13 @@ export default function Post() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Step 1: Settings to change before you shoot</h2>
           <p>Open Settings → Camera and check these:</p>
           <p className="mt-3"><strong>Format: High Efficiency or Most Compatible.</strong> Either works. High Efficiency saves space (HEIC), Most Compatible gives standard JPEG. If your photo lab needs JPEG, pick Most Compatible.</p>
-          <p className="mt-3"><strong>Preserve Settings → Live Photo: OFF.</strong> Turn off Live Photo before shooting — the motion frame can confuse passport tools.</p>
+          <p className="mt-3"><strong>Preserve Settings → Live Photo: OFF.</strong> Turn off Live Photo before shooting - the motion frame can confuse passport tools.</p>
           <p className="mt-3">In the camera app itself: tap the up-arrow at the top, make sure flash is <strong>OFF</strong>, HDR is <strong>AUTO</strong> or <strong>OFF</strong>, set timer to <strong>3 or 10 seconds</strong> if you&apos;re alone.</p>
         </section>
 
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Step 2: Set up the background</h2>
-          <p>Find a plain wall — white or very light grey. A blank door also works. Do <strong>not</strong> stand against:</p>
+          <p>Find a plain wall - white or very light grey. A blank door also works. Do <strong>not</strong> stand against:</p>
           <ul className="list-disc pl-6 space-y-1 mt-3">
             <li>Wallpaper, even if subtle</li>
             <li>A painted wall with visible texture</li>
@@ -115,12 +115,12 @@ export default function Post() {
 
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Step 3: Position the iPhone</h2>
-          <p>The iPhone should be <strong>at your eye level</strong> — not below, not above. If it&apos;s below, the camera looks up your nose. If it&apos;s above, your forehead becomes the dominant feature.</p>
+          <p>The iPhone should be <strong>at your eye level</strong> - not below, not above. If it&apos;s below, the camera looks up your nose. If it&apos;s above, your forehead becomes the dominant feature.</p>
           <p className="mt-3">Three ways to hold the camera at eye level:</p>
           <ul className="list-disc pl-6 space-y-2 mt-3">
             <li><strong>Tripod with phone mount.</strong> $15 on Amazon. Sets it at exact eye level, hands-free.</li>
             <li><strong>Stack of books on a table.</strong> Place your phone vertically against a stack of books at the right height. Use the timer.</li>
-            <li><strong>Another person.</strong> Have someone hold the iPhone at their own eye level (not yours). Tell them to step <strong>6 feet away</strong> — closer than this introduces lens distortion that warps your face.</li>
+            <li><strong>Another person.</strong> Have someone hold the iPhone at their own eye level (not yours). Tell them to step <strong>6 feet away</strong> - closer than this introduces lens distortion that warps your face.</li>
           </ul>
         </section>
 
@@ -184,12 +184,12 @@ export default function Post() {
             <li><Link href="/india-passport-photo" className="text-blue-600 hover:underline">India</Link>: 51×51mm, face takes 70-80% of the frame</li>
             <li><Link href="/canada-passport-photo" className="text-blue-600 hover:underline">Canada</Link>: 50×70mm, chin-to-crown 31-36mm</li>
           </ul>
-          <p className="mt-3">Manually cropping in Photos to match these is tedious and error-prone. The free way: use a tool that auto-detects your face and applies the correct country-specific crop. <Link href="/" className="text-blue-600 hover:underline">IDPhotoSnap</Link> is one option built for this exact use case — runs in your browser (no upload), supports 85+ countries, and produces a print-ready file.</p>
+          <p className="mt-3">Manually cropping in Photos to match these is tedious and error-prone. The free way: use a tool that auto-detects your face and applies the correct country-specific crop. <Link href="/" className="text-blue-600 hover:underline">IDPhotoSnap</Link> is one option built for this exact use case - runs in your browser (no upload), supports 85+ countries, and produces a print-ready file.</p>
         </section>
 
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Step 8: Print or upload</h2>
-          <p>If your application is online (UK, India, US for some forms), upload the digital file directly. Check the file size limit — many systems require under 240KB or 1MB.</p>
+          <p>If your application is online (UK, India, US for some forms), upload the digital file directly. Check the file size limit - many systems require under 240KB or 1MB.</p>
           <p className="mt-3">If you need a printed photo, see our <Link href="/blog/print-passport-photo-at-home" className="text-blue-600 hover:underline">guide to printing at home or at a lab for under $1</Link>.</p>
         </section>
 
@@ -236,11 +236,11 @@ export default function Post() {
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">Does file format matter?</p>
-              <p>Most authorities accept JPEG. Some accept PNG. HEIC (iPhone&apos;s native format) is sometimes rejected, so convert to JPEG before submitting. iPhone can do this automatically — Settings → Camera → Formats → Most Compatible.</p>
+              <p>Most authorities accept JPEG. Some accept PNG. HEIC (iPhone&apos;s native format) is sometimes rejected, so convert to JPEG before submitting. iPhone can do this automatically - Settings → Camera → Formats → Most Compatible.</p>
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">What resolution should I aim for?</p>
-              <p>At least 600×600 pixels for a 2×2 inch print at 300 DPI. iPhone photos are usually 4032×3024 — far more than enough.</p>
+              <p>At least 600×600 pixels for a 2×2 inch print at 300 DPI. iPhone photos are usually 4032×3024 - far more than enough.</p>
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">Can I edit the photo (brightness, color)?</p>
@@ -251,7 +251,7 @@ export default function Post() {
 
         <div className="border-t border-gray-200 pt-6 mt-8">
           <p className="text-sm text-gray-500">
-            Once you have the file, <Link href="/" className="text-blue-600 hover:underline">crop and resize it for your country</Link> — that&apos;s the step where most home passport photos actually go wrong, even with perfect photography.
+            Once you have the file, <Link href="/" className="text-blue-600 hover:underline">crop and resize it for your country</Link> - that&apos;s the step where most home passport photos actually go wrong, even with perfect photography.
           </p>
         </div>
 

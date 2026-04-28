@@ -52,7 +52,7 @@ export default function Post() {
       <div className="space-y-8 text-gray-700 leading-relaxed">
         <p className="text-lg text-gray-600">
           A rejected passport photo is the most preventable delay in any application. Government rejection
-          letters rarely tell you exactly what was wrong — just that it failed. This guide goes through the
+          letters rarely tell you exactly what was wrong - just that it failed. This guide goes through the
           ten reasons that account for almost all rejections, in order of how often they happen.
         </p>
 
@@ -67,7 +67,7 @@ export default function Post() {
         <Reason
           n={2}
           title="Wrong dimensions or face size"
-          intro="Each country has specific dimensions. Submitting a 2×2 inch US format photo for a UK application will fail — the UK requires 35×45mm, and the face must occupy a different percentage of the frame."
+          intro="Each country has specific dimensions. Submitting a 2×2 inch US format photo for a UK application will fail - the UK requires 35×45mm, and the face must occupy a different percentage of the frame."
           fix="Crop to the exact specs of your destination country. Don't approximate. The image processing tools that handle this automatically are free and take 10 seconds."
         >
           <p className="mt-3"><strong>Quick reference:</strong></p>
@@ -90,7 +90,7 @@ export default function Post() {
         <Reason
           n={4}
           title="Smiling, frowning, or an open mouth"
-          intro="Almost all countries require a neutral expression with mouth closed. The US, Canada, India, China, EU, Japan, Australia all reject smiling photos. The UK technically allows a slight natural smile — but a wide or toothy smile will still be rejected."
+          intro="Almost all countries require a neutral expression with mouth closed. The US, Canada, India, China, EU, Japan, Australia all reject smiling photos. The UK technically allows a slight natural smile - but a wide or toothy smile will still be rejected."
           fix={<>Take 5-10 shots. Pick the one where your mouth is closed and your face looks relaxed. <Link href="/blog/can-you-smile-in-passport-photo" className="text-blue-600 hover:underline">See the full country-by-country breakdown</Link>.</>}
         />
 
@@ -125,7 +125,7 @@ export default function Post() {
         <Reason
           n={9}
           title="Image quality is too low"
-          intro="Modern submissions need at least 600×600 pixels (for a 2×2 inch print at 300 DPI), sharp focus, no motion blur, no visible noise or grain, and no JPEG compression artifacts. A photo from any iPhone or Android phone in the last 5 years easily meets the resolution requirement — the issue is usually motion blur."
+          intro="Modern submissions need at least 600×600 pixels (for a 2×2 inch print at 300 DPI), sharp focus, no motion blur, no visible noise or grain, and no JPEG compression artifacts. A photo from any iPhone or Android phone in the last 5 years easily meets the resolution requirement - the issue is usually motion blur."
           fix="Use a tripod or stable surface. Save the final file at high quality (JPEG quality 90+ if you have to compress)."
         />
 
@@ -133,7 +133,7 @@ export default function Post() {
           n={10}
           title="Wrong file format or size for upload"
           intro="If your application is online, the rejection might happen before a human ever sees the photo. Common issues: wrong file format (HEIC instead of JPEG), file too large (over 240KB or 1MB depending on system), file too small (under 50KB suggests low quality), or wrong color profile (CMYK instead of sRGB)."
-          fix="Export the final photo as JPEG, sRGB, with quality high enough to meet the system's lower bound but compressed enough to fit the upper bound. Most online applications give a target file size — meet it exactly."
+          fix="Export the final photo as JPEG, sRGB, with quality high enough to meet the system's lower bound but compressed enough to fit the upper bound. Most online applications give a target file size - meet it exactly."
         />
 
         <section>
@@ -159,8 +159,8 @@ export default function Post() {
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">What to do if your photo was already rejected</h2>
           <ol className="list-decimal pl-6 space-y-2">
-            <li><strong>Read the rejection notice carefully.</strong> Many notices include a numeric error code — match it to the issue above.</li>
-            <li><strong>Don&apos;t retake the photo at the same place.</strong> If you used a CVS kiosk that produced a rejection, don&apos;t go back — try a different setup.</li>
+            <li><strong>Read the rejection notice carefully.</strong> Many notices include a numeric error code - match it to the issue above.</li>
+            <li><strong>Don&apos;t retake the photo at the same place.</strong> If you used a CVS kiosk that produced a rejection, don&apos;t go back - try a different setup.</li>
             <li><strong>Take it at home with this guide:</strong> <Link href="/blog/how-to-take-passport-photo-with-iphone" className="text-blue-600 hover:underline">How to take a passport photo with iPhone</Link>.</li>
             <li><strong>Use a country-specific tool to crop.</strong> Don&apos;t manually estimate dimensions. <Link href="/" className="text-blue-600 hover:underline">IDPhotoSnap</Link> handles exact specs for 85+ countries.</li>
           </ol>

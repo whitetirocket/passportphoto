@@ -34,7 +34,7 @@ const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
-    { '@type': 'Question', name: 'Can I use a passport photo from another country for a US application?', acceptedAnswer: { '@type': 'Answer', text: 'Only if the dimensions match exactly. UK photos (35x45mm) cannot be used for US (51x51mm) — the aspect ratios are different.' } },
+    { '@type': 'Question', name: 'Can I use a passport photo from another country for a US application?', acceptedAnswer: { '@type': 'Answer', text: 'Only if the dimensions match exactly. UK photos (35x45mm) cannot be used for US (51x51mm) - the aspect ratios are different.' } },
     { '@type': 'Question', name: 'Can I wear glasses in a US passport photo?', acceptedAnswer: { '@type': 'Answer', text: 'No. The US State Department banned glasses in passport photos in November 2016. The only exception is a documented medical condition with a doctor letter.' } },
     { '@type': 'Question', name: 'What dimensions are required for a US passport photo?', acceptedAnswer: { '@type': 'Answer', text: '2 x 2 inches (51 x 51 mm). For digital submissions, between 600 x 600 and 1200 x 1200 pixels, JPEG format, between 54 KB and 10 MB.' } },
     { '@type': 'Question', name: 'How big should my face be in a US passport photo?', acceptedAnswer: { '@type': 'Answer', text: '1 to 1 3/8 inches (25-35 mm) from the bottom of the chin to the top of the head, which is 50-69% of the photo height.' } },
@@ -52,7 +52,7 @@ export default function Post() {
 
       <div className="space-y-8 text-gray-700 leading-relaxed">
         <p className="text-lg text-gray-600">
-          The US State Department&apos;s photo requirements are the most thoroughly documented in the world —
+          The US State Department&apos;s photo requirements are the most thoroughly documented in the world - 
           and also the most strictly enforced. A photo that&apos;s even slightly off will delay your application
           by 2-3 weeks. This guide goes through every official requirement for 2026, in detail, with what each
           one actually means in practice.
@@ -101,7 +101,7 @@ export default function Post() {
 
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Size requirements explained</h2>
-          <p><strong>2 × 2 inches.</strong> This is exactly 51 × 51 millimeters at 300 DPI. The photo must be square — not rectangular, not landscape. A photo that&apos;s slightly off-square (50 × 51 mm, for example) will be rejected by automated systems.</p>
+          <p><strong>2 × 2 inches.</strong> This is exactly 51 × 51 millimeters at 300 DPI. The photo must be square - not rectangular, not landscape. A photo that&apos;s slightly off-square (50 × 51 mm, for example) will be rejected by automated systems.</p>
           <p className="mt-3">If you&apos;re submitting digitally:</p>
           <ul className="list-disc pl-6 space-y-1 mt-2">
             <li>Minimum: 600 × 600 pixels</li>
@@ -123,7 +123,7 @@ export default function Post() {
             <li>Chin cropped: bottom of chin not visible (rejection)</li>
           </ul>
           <p className="mt-3">The State Department&apos;s automated system measures head height in pixels and compares to expected ranges. A few millimeters off is enough for rejection.</p>
-          <p className="mt-3"><strong>How to get this right:</strong> use a tool that auto-detects your face and applies the correct US-specific crop. <Link href="/" className="text-blue-600 hover:underline">IDPhotoSnap</Link> does this automatically. Manual cropping is possible but unforgiving — even a 5% error in the crop will fail.</p>
+          <p className="mt-3"><strong>How to get this right:</strong> use a tool that auto-detects your face and applies the correct US-specific crop. <Link href="/" className="text-blue-600 hover:underline">IDPhotoSnap</Link> does this automatically. Manual cropping is possible but unforgiving - even a 5% error in the crop will fail.</p>
         </section>
 
         <section>
@@ -134,7 +134,7 @@ export default function Post() {
             <li>No patterns, textures, or designs</li>
             <li>No shadows on the background</li>
             <li>No other people, pets, or objects visible</li>
-            <li>No &quot;scenery&quot; — no walls with art, no curtains, no doors with knobs visible</li>
+            <li>No &quot;scenery&quot; - no walls with art, no curtains, no doors with knobs visible</li>
           </ul>
           <p className="mt-3">The most common background failure is a <strong>shadow on the wall behind you</strong>, caused by standing too close to it. The fix is to stand 2-3 feet away from any wall and use even lighting. Full diagnostic in <Link href="/blog/why-was-my-passport-photo-rejected" className="text-blue-600 hover:underline">Why Was My Passport Photo Rejected</Link>.</p>
         </section>
@@ -154,14 +154,14 @@ export default function Post() {
           <ul className="list-disc pl-6 space-y-1 mt-2">
             <li>A wide smile showing teeth (always)</li>
             <li>A closed-mouth smile that lifts the cheeks (usually)</li>
-            <li>A &quot;natural smile&quot; — there&apos;s no such category in US rules</li>
+            <li>A &quot;natural smile&quot; - there&apos;s no such category in US rules</li>
           </ul>
           <p className="mt-3">If you genuinely cannot keep a neutral expression (some people can&apos;t), take 20 photos and pick the one where your default smile is least pronounced.</p>
         </section>
 
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Glasses (banned since 2016)</h2>
-          <p><strong>Glasses are not allowed</strong> in US passport photos as of November 2016. Even glasses without glare, even thin frames, even prescription glasses you wear daily — they must be removed for the photo.</p>
+          <p><strong>Glasses are not allowed</strong> in US passport photos as of November 2016. Even glasses without glare, even thin frames, even prescription glasses you wear daily - they must be removed for the photo.</p>
           <p className="mt-3">The only exception: a documented medical condition that prevents glasses removal. You must submit a signed letter from your doctor with the application.</p>
         </section>
 
@@ -169,7 +169,7 @@ export default function Post() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Photo paper requirements (printed photos)</h2>
           <p>If you&apos;re submitting a printed photo with a Form DS-11 (in-person renewal), it must be:</p>
           <ul className="list-disc pl-6 space-y-1 mt-2">
-            <li>Printed on <strong>photo paper</strong> (glossy or matte) — never plain printer paper</li>
+            <li>Printed on <strong>photo paper</strong> (glossy or matte) - never plain printer paper</li>
             <li>Single photo, with <strong>no borders</strong></li>
             <li>Cut to exactly <strong>2 × 2 inches</strong></li>
             <li>Not folded, not creased, not damaged</li>
@@ -184,7 +184,7 @@ export default function Post() {
             <li><strong>Set up:</strong> plain white wall, stand 2-3 feet away, large window in front of you, good daylight</li>
             <li><strong>Camera:</strong> at eye level, 6 feet away (use a tripod or have someone hold it)</li>
             <li><strong>Pose:</strong> neutral expression, mouth closed, glasses off, looking straight ahead</li>
-            <li><strong>Take 10 photos</strong> — variation gives you options</li>
+            <li><strong>Take 10 photos</strong> - variation gives you options</li>
             <li><strong>Pick one</strong> with eyes open, mouth closed, even lighting</li>
             <li><strong>Crop to US specs:</strong> <Link href="/" className="text-blue-600 hover:underline">IDPhotoSnap</Link> auto-detects your face and applies the exact 2×2 inch / 50-69% face-height crop the State Department requires</li>
             <li><strong>Verify dimensions:</strong> the file should be exactly 51 × 51 mm at 300 DPI (or 600 × 600 to 1200 × 1200 pixels for digital submission)</li>
@@ -198,7 +198,7 @@ export default function Post() {
           <div className="space-y-5">
             <div>
               <p className="font-semibold text-gray-900 mb-1">Can I use a passport photo from another country&apos;s application?</p>
-              <p>Only if the dimensions match exactly. UK photos (35×45mm) cannot be used for US (51×51mm) — the aspect ratios are different.</p>
+              <p>Only if the dimensions match exactly. UK photos (35×45mm) cannot be used for US (51×51mm) - the aspect ratios are different.</p>
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">What if I&apos;m renewing and look similar to my old photo?</p>
@@ -206,7 +206,7 @@ export default function Post() {
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">Are infant passport photos different?</p>
-              <p>Yes — infants and young children have separate, more lenient rules. The full face must be visible, eyes open if possible (a sleeping infant photo is sometimes accepted), and no other people in the frame.</p>
+              <p>Yes - infants and young children have separate, more lenient rules. The full face must be visible, eyes open if possible (a sleeping infant photo is sometimes accepted), and no other people in the frame.</p>
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">Can I edit lighting in Photoshop?</p>
@@ -217,7 +217,7 @@ export default function Post() {
 
         <div className="border-t border-gray-200 pt-6 mt-8">
           <p className="text-sm text-gray-500">
-            The US State Department publishes the most detailed photo specs in the world. The trade-off: they&apos;re strictly enforced, with no human leniency for &quot;close enough.&quot; <Link href="/" className="text-blue-600 hover:underline">Use IDPhotoSnap</Link> to handle US-specific dimensions and face-coverage rules automatically — free, no signup, runs in your browser.
+            The US State Department publishes the most detailed photo specs in the world. The trade-off: they&apos;re strictly enforced, with no human leniency for &quot;close enough.&quot; <Link href="/" className="text-blue-600 hover:underline">Use IDPhotoSnap</Link> to handle US-specific dimensions and face-coverage rules automatically - free, no signup, runs in your browser.
           </p>
         </div>
 

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: "We're Live on Product Hunt Today | IDPhotoSnap",
-  description: 'IDPhotoSnap is launching on Product Hunt — free passport photo maker for 85+ countries with no signup, no watermark, and complete browser-based privacy.',
+  description: 'IDPhotoSnap is launching on Product Hunt - free passport photo maker for 85+ countries with no signup, no watermark, and complete browser-based privacy.',
 }
 
 export default function Post() {
@@ -27,7 +27,7 @@ export default function Post() {
         <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
           <p className="font-semibold text-blue-900 mb-2">🚀 Live now</p>
           <p className="text-blue-800 text-sm mb-3">
-            Vote, comment, or just take a look — every bit helps the launch reach more people.
+            Vote, comment, or just take a look - every bit helps the launch reach more people.
           </p>
           <a
             href="https://www.producthunt.com/products/idphotosnap"
@@ -48,7 +48,7 @@ export default function Post() {
           </p>
           <p className="mt-3">
             None of that needs to be true. A passport photo is a crop, a resize, and a
-            background check — operations a smartphone browser can do in seconds. So we built
+            background check - operations a smartphone browser can do in seconds. So we built
             the tool we wished existed.
           </p>
         </section>
@@ -57,9 +57,9 @@ export default function Post() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">What you can do today</h2>
           <ul className="list-disc pl-6 space-y-2">
             <li>Take a passport, visa, or ID photo for any of 85+ countries</li>
-            <li>Skip the signup — there is no account to create</li>
-            <li>Skip the watermark — the result is a clean, print-ready image</li>
-            <li>Keep your photo private — image processing happens entirely in your browser</li>
+            <li>Skip the signup - there is no account to create</li>
+            <li>Skip the watermark - the result is a clean, print-ready image</li>
+            <li>Keep your photo private - image processing happens entirely in your browser</li>
             <li>Print at any pharmacy for about $0.30, instead of paying $15+ at a studio</li>
           </ul>
         </section>
@@ -70,7 +70,7 @@ export default function Post() {
           <ul className="list-disc pl-6 space-y-2 mt-3">
             <li>Add the remaining countries to reach full ICAO coverage</li>
             <li>Print-ready PDF output (multiple photos arranged on a 4×6 sheet)</li>
-            <li>Better baby and infant photo guidance — the rules differ significantly from adults</li>
+            <li>Better baby and infant photo guidance - the rules differ significantly from adults</li>
             <li>Per-country guides walking through the specific requirements at the consulate level</li>
           </ul>
           <p className="mt-3">
@@ -93,7 +93,7 @@ export default function Post() {
             <div>
               <p className="font-semibold text-gray-900 mb-1">Where does my photo go?</p>
               <p>
-                Nowhere. Image processing runs entirely in your browser — there is no server-side
+                Nowhere. Image processing runs entirely in your browser - there is no server-side
                 upload. You can verify this in your browser&apos;s DevTools by watching the
                 Network tab while you use the tool.
               </p>
@@ -120,7 +120,7 @@ export default function Post() {
                 >
                   upvote on Product Hunt
                 </a>
-                {' '}to help others find it. Honest feedback is the most useful thing — if a
+                {' '}to help others find it. Honest feedback is the most useful thing - if a
                 country&apos;s output looked wrong, tell us so we can fix the spec.
               </p>
             </div>

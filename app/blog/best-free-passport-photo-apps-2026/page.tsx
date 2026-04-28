@@ -76,14 +76,14 @@ export default function Post() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">IDPhotoSnap — truly free, browser-based</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">IDPhotoSnap - truly free, browser-based</h2>
           <ul className="list-disc pl-6 space-y-1">
             <li><strong>Cost:</strong> free</li>
             <li><strong>Privacy:</strong> photo never leaves your device (image processing runs entirely in your browser)</li>
             <li><strong>Countries supported:</strong> 85+</li>
             <li><strong>Watermark:</strong> none</li>
             <li><strong>Account required:</strong> no</li>
-            <li><strong>Catch:</strong> no print delivery — you get a digital file you have to print yourself ($0.30 at any pharmacy)</li>
+            <li><strong>Catch:</strong> no print delivery - you get a digital file you have to print yourself ($0.30 at any pharmacy)</li>
           </ul>
           <p className="mt-3">Built specifically to remove the artificial paywalls common in this category. Image processing uses the browser&apos;s canvas API and on-device face detection, so there&apos;s no server cost to run, which is why it can stay free without ads or subscriptions.</p>
           <p className="mt-3">You can verify the privacy claim directly: open your browser&apos;s DevTools, go to the Network tab, and watch what gets sent during use. There&apos;s no image upload because all processing happens in the browser.</p>
@@ -92,7 +92,7 @@ export default function Post() {
 
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
-            Passport Photo Online —{' '}
+            Passport Photo Online - {' '}
             <a href="https://passportphoto.online" rel="nofollow" target="_blank" className="text-blue-600 hover:underline">
               passportphoto.online
             </a>
@@ -105,13 +105,13 @@ export default function Post() {
             <li><strong>Account required:</strong> no, but you must enter email to download</li>
             <li><strong>Catch:</strong> the price comes only at the final download step</li>
           </ul>
-          <p className="mt-3">Probably the largest competitor by traffic. The product itself works well, but the &quot;free&quot; label is misleading — there&apos;s no way to actually get a usable photo without paying. They also have an aggressive upsell flow (&quot;AI background change for $5&quot;, &quot;express delivery for $8&quot;) that adds to the base price.</p>
+          <p className="mt-3">Probably the largest competitor by traffic. The product itself works well, but the &quot;free&quot; label is misleading - there&apos;s no way to actually get a usable photo without paying. They also have an aggressive upsell flow (&quot;AI background change for $5&quot;, &quot;express delivery for $8&quot;) that adds to the base price.</p>
           <p className="mt-3">If you&apos;re going to pay $10-15 for the convenience of skipping print yourself, this is one of the cleanest paid options. Best for: people who don&apos;t mind paying $10-15 for convenience and don&apos;t want to deal with cropping themselves.</p>
         </section>
 
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
-            PhotoAiD —{' '}
+            PhotoAiD - {' '}
             <a href="https://photoaid.com" rel="nofollow" target="_blank" className="text-blue-600 hover:underline">
               photoaid.com
             </a>
@@ -142,7 +142,7 @@ export default function Post() {
             <li><strong>Account required:</strong> no</li>
             <li><strong>Catch:</strong> if the photo is rejected, you pay again to redo it</li>
           </ul>
-          <p className="mt-3">Worth mentioning because it&apos;s the default many people fall into. Quality is genuinely mediocre — the kiosk cameras are old, lighting in the store is harsh fluorescent, and the operators are not trained photographers. <Link href="/blog/why-was-my-passport-photo-rejected" className="text-blue-600 hover:underline">Rejection rates from drugstore kiosks</Link> are high enough that the State Department flags them in its guidance.</p>
+          <p className="mt-3">Worth mentioning because it&apos;s the default many people fall into. Quality is genuinely mediocre - the kiosk cameras are old, lighting in the store is harsh fluorescent, and the operators are not trained photographers. <Link href="/blog/why-was-my-passport-photo-rejected" className="text-blue-600 hover:underline">Rejection rates from drugstore kiosks</Link> are high enough that the State Department flags them in its guidance.</p>
           <p className="mt-3">Best for: people who specifically want printed photos handed to them in 5 minutes and are willing to pay for that convenience. The quality-to-cost ratio is the worst of any option, but the speed is unmatched.</p>
         </section>
 
@@ -150,11 +150,11 @@ export default function Post() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Free apps in app stores (iOS/Android)</h2>
           <p>There are 50+ &quot;passport photo&quot; apps in the App Store and Google Play. Quality varies enormously:</p>
           <ul className="list-disc pl-6 space-y-2 mt-3">
-            <li><strong>Scams:</strong> free to use, then charge $20 in-app to &quot;unlock HD&quot; — which means watermark removal</li>
+            <li><strong>Scams:</strong> free to use, then charge $20 in-app to &quot;unlock HD&quot; - which means watermark removal</li>
             <li><strong>Legitimate free apps with ads:</strong> acceptable but the ad experience is distracting</li>
             <li><strong>Companion apps to paid services:</strong> the app is free but the actual photo download costs money</li>
           </ul>
-          <p className="mt-3">I&apos;m not naming specific apps because ownership and quality change frequently in this category. If you want to use a phone app specifically, check recent reviews carefully — apps that were good in 2023 may not be in 2026.</p>
+          <p className="mt-3">I&apos;m not naming specific apps because ownership and quality change frequently in this category. If you want to use a phone app specifically, check recent reviews carefully - apps that were good in 2023 may not be in 2026.</p>
         </section>
 
         <section>
@@ -190,7 +190,7 @@ export default function Post() {
 
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How each one handles privacy</h2>
-          <p>This is the dimension that gets the least attention but matters most for some users. A passport photo is biometric data — losing control of where it goes is a real privacy cost.</p>
+          <p>This is the dimension that gets the least attention but matters most for some users. A passport photo is biometric data - losing control of where it goes is a real privacy cost.</p>
           <div className="overflow-x-auto mt-4">
             <table className="w-full text-sm border-collapse">
               <thead>
@@ -227,7 +227,7 @@ export default function Post() {
           <ul className="list-disc pl-6 space-y-2 mt-3">
             <li><strong>For the US, UK, Canada, EU, or any major country:</strong> IDPhotoSnap if I want it free with privacy, Passport Photo Online if I&apos;d rather pay $10-15 for the convenience of skipping the print step</li>
             <li><strong>For a less common country:</strong> check that the tool actually has the spec for your destination</li>
-            <li><strong>Avoid drugstore kiosks</strong> unless it&apos;s the only option you have access to — quality is too inconsistent for the price</li>
+            <li><strong>Avoid drugstore kiosks</strong> unless it&apos;s the only option you have access to - quality is too inconsistent for the price</li>
             <li><strong>Avoid app store apps with &quot;free&quot; in the name</strong> unless you&apos;ve verified they&apos;re not paywalled at the download step</li>
           </ul>
         </section>
@@ -241,7 +241,7 @@ export default function Post() {
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">Is it safe to upload my passport photo to a third-party site?</p>
-              <p>Technically risky — you&apos;re trusting their security and their data retention policies. Most established services have reasonable security, but a passport photo is biometric data that&apos;s harder to &quot;rotate&quot; than a password. Browser-based tools that don&apos;t upload at all sidestep the question.</p>
+              <p>Technically risky - you&apos;re trusting their security and their data retention policies. Most established services have reasonable security, but a passport photo is biometric data that&apos;s harder to &quot;rotate&quot; than a password. Browser-based tools that don&apos;t upload at all sidestep the question.</p>
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">Can I just use my phone&apos;s photo and crop it manually?</p>
@@ -256,7 +256,7 @@ export default function Post() {
 
         <div className="border-t border-gray-200 pt-6 mt-8">
           <p className="text-sm text-gray-500">
-            The &quot;best&quot; passport photo app depends on how you weigh privacy, cost, and convenience. There&apos;s no single answer, but at least the tradeoffs are now explicit. If you want to try the tool I built, <Link href="/" className="text-blue-600 hover:underline">IDPhotoSnap</Link> is at idphotosnap.com — free, no signup, runs in your browser, no upload.
+            The &quot;best&quot; passport photo app depends on how you weigh privacy, cost, and convenience. There&apos;s no single answer, but at least the tradeoffs are now explicit. If you want to try the tool I built, <Link href="/" className="text-blue-600 hover:underline">IDPhotoSnap</Link> is at idphotosnap.com - free, no signup, runs in your browser, no upload.
           </p>
         </div>
 
