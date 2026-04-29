@@ -399,15 +399,40 @@ export const countries: CountrySpec[] = [
         slug: 'india-pcc-photo',
         widthMm: 35, heightMm: 45, widthPx: 413, heightPx: 531, dpi: 300,
         background: 'Plain white', bgColor: '#ffffff', bgColorLabel: 'White',
-        requirements: ['Size: 35×45 mm', 'Plain white background', 'Neutral expression, mouth closed', 'Both eyes open and clearly visible', 'No glasses', 'Face must cover 70-80% of frame', 'Taken within the last 6 months'],
-        seoTitle: 'Free India PCC Photo Maker | 35×45mm | Police Clearance Certificate | Free',
-        seoDescription: 'Create a compliant Police Clearance Certificate (PCC) photo for India online for free. Correct 35×45mm size, white background. No watermark, no registration.',
-        h1: 'Free India PCC Photo Maker',
+        requirements: [
+          'Size for PSK application in India: 35×45 mm',
+          'Size for US / UK / Canada visa applications via VFS: 51×51 mm (2×2 inch)',
+          'Plain white background',
+          'Neutral expression, mouth closed',
+          'Both eyes open and clearly visible',
+          'No glasses',
+          'Face must cover 70-80% of frame',
+          'Taken within the last 6 months',
+        ],
+        seoTitle: 'India PCC Photo Size: 35×45mm vs 2×2 inch (Free Photo Maker)',
+        seoDescription: 'India PCC photo specifications explained: 35×45mm for PSK application, 2×2 inch (51×51mm) for VFS / foreign embassy submissions. Free online tool, no watermark, no registration.',
+        h1: 'India PCC Photo: Which Size Do You Actually Need?',
         faq: [
-          { q: 'What size is an Indian PCC photo?', a: 'PCC (Police Clearance Certificate) photos applied through Passport Seva Kendra (PSK) require the same 35×45mm size with a plain white background as the standard Indian passport photo.' },
-          { q: 'Can I use my Indian passport photo for PCC?', a: 'Yes. PCC applications at PSK use identical photo specifications to a regular passport application: 35×45mm with a plain white background.' },
-          { q: 'Do foreign embassies require a different size when I submit my PCC?', a: 'The PCC certificate itself is issued by the Indian government using the 35×45mm photo. Some foreign embassies (US, Canada, Australia) may require additional photos with their own dimensions for the visa application package.' },
-          { q: 'Is my photo uploaded to your servers?', a: 'No. All processing happens locally in your browser. Your photo never leaves your device.' },
+          {
+            q: 'What size is an Indian PCC photo - 35×45mm or 51×51mm (2×2 inch)?',
+            a: 'It depends on where you are submitting the PCC. For applying at a Passport Seva Kendra (PSK) in India, the photo is 35×45mm with a plain white background, identical to the Indian passport photo. For PCC submitted as part of a US, UK, Canada, or Australia visa application via VFS Global, the photo is 51×51mm (2×2 inch), matching the destination country format. VFS Global officially lists 2×2 inch on its India PCC pages.',
+          },
+          {
+            q: 'I am applying for a US visa from India - which PCC photo size?',
+            a: 'For VFS Global India accepting your US visa application package, use 51×51mm (2×2 inch) photos. This matches the US Department of State photo standard. If your supporting PCC certificate from PSK uses a 35×45mm photo, that is fine - it is the certificate itself, not the visa application photo.',
+          },
+          {
+            q: 'Why do different sources say different sizes?',
+            a: 'Two different applications use the PCC and each has its own photo standard. Indian government PSK uses ICAO 35×45mm. Foreign embassies receiving the certificate via their visa application typically want 51×51mm because their entire application package follows their own country format. Both sizes are correct in different contexts.',
+          },
+          {
+            q: 'Can I use my Indian passport photo for the PSK PCC application?',
+            a: 'Yes. PSK uses the same 35×45mm photo specification for both passport applications and PCC applications.',
+          },
+          {
+            q: 'Is my photo uploaded to your servers?',
+            a: 'No. All processing happens locally in your browser. Your photo never leaves your device.',
+          },
         ],
       },
       {
