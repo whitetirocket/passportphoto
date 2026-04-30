@@ -16,10 +16,39 @@ export const metadata: Metadata = {
     '100% free passport photo maker. No registration, no watermark, no upload. US, UK, Canada, Australia, India, Schengen, UAE + 7 more countries. Download JPG or print-ready PDF instantly.',
   keywords: 'free passport photo, passport photo maker free, no watermark passport photo, free passport photo online no registration',
   metadataBase: new URL('https://idphotosnap.com'),
+  alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     locale: 'en_US',
     siteName: 'IDPhotoSnap',
+    url: 'https://idphotosnap.com',
+  },
+}
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'IDPhotoSnap',
+  alternateName: 'IDPhotoSnap.com',
+  url: 'https://idphotosnap.com',
+  logo: 'https://idphotosnap.com/IDPhotoSnap.png',
+  description:
+    'IDPhotoSnap is a free browser-based passport and visa photo tool. Crops photos to country-specific specifications for 85+ countries with no registration, no watermark, and no server upload — everything is processed locally in the user\'s browser.',
+  foundingDate: '2026',
+  sameAs: [
+    'https://www.producthunt.com/products/idphotosnap',
+  ],
+}
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'IDPhotoSnap',
+  alternateName: 'IDPhotoSnap.com',
+  url: 'https://idphotosnap.com',
+  publisher: {
+    '@type': 'Organization',
+    name: 'IDPhotoSnap',
   },
 }
 
@@ -34,6 +63,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         gtag('config', 'G-5EB80XQFS3');
       `}</Script>
       <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
+        <Script id="organization-schema" type="application/ld+json" strategy="beforeInteractive">
+          {JSON.stringify(organizationSchema)}
+        </Script>
+        <Script id="website-schema" type="application/ld+json" strategy="beforeInteractive">
+          {JSON.stringify(websiteSchema)}
+        </Script>
         <header className="border-b border-gray-100 bg-white sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-2">
             <Logo />
