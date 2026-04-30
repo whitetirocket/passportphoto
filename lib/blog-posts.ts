@@ -42,6 +42,18 @@ export const blogPosts: BlogPost[] = [
       'iPhone passport photo setup — phone on tripod, person facing window with natural light, plain wall behind',
   },
   {
+    slug: 'ees-passport-photo-requirements-2026',
+    title: 'EES Is Live: Do You Need a New Passport Photo? (April 2026 Update)',
+    description:
+      "The EU's Entry/Exit System launched on April 10, 2026. Here's what actually changed for passport and visa photos — and what didn't. Schengen visa specs, EES border biometrics, and ETIAS in plain language.",
+    date: 'May 2, 2026',
+    readTime: '8 min read',
+    publishAt: '2026-05-02T08:00:00Z',
+    ogImage: '/IDPhotoSnap.png',
+    imageAlt:
+      'EU Entry/Exit System (EES) explained: biometric photo taken at Schengen border kiosk, Schengen visa photo specification 35x45mm unchanged, ETIAS launching Q4 2026',
+  },
+  {
     slug: 'why-was-my-passport-photo-rejected',
     title: 'Why Was My Passport Photo Rejected? Top 10 Reasons (2026)',
     description:
