@@ -35,6 +35,13 @@ const organizationSchema = {
   description:
     'IDPhotoSnap is a free browser-based passport and visa photo tool. Crops photos to country-specific specifications for 85+ countries with no registration, no watermark, and no server upload — everything is processed locally in the user\'s browser.',
   foundingDate: '2026',
+  email: 'hello@idphotosnap.com',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    email: 'hello@idphotosnap.com',
+    contactType: 'customer support',
+    availableLanguage: ['English'],
+  },
   sameAs: [
     'https://www.producthunt.com/products/idphotosnap',
   ],
@@ -135,7 +142,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </ul>
               </div>
               <div>
-                <p className="font-semibold text-sm mb-3 text-gray-800">Legal</p>
+                <p className="font-semibold text-sm mb-3 text-gray-800">Contact</p>
+                <ul className="space-y-1">
+                  <li>
+                    <a href="mailto:hello@idphotosnap.com" className="text-sm text-gray-500 hover:text-blue-600">
+                      hello@idphotosnap.com
+                    </a>
+                  </li>
+                </ul>
+                <p className="font-semibold text-sm mt-4 mb-3 text-gray-800">Legal</p>
                 <ul className="space-y-1">
                   <li><Link href="/privacy" className="text-sm text-gray-500 hover:text-blue-600">Privacy Policy</Link></li>
                   <li><Link href="/terms" className="text-sm text-gray-500 hover:text-blue-600">Terms of Use</Link></li>
