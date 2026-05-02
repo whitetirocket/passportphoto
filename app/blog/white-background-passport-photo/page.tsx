@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Why Passport Photos Need a White Background — Rules Explained',
+  title: 'Why Passport Photos Need a White Background - Rules Explained',
   description: 'Why do passport photos require a white or off-white background? Official rules, exceptions by country (Finland grey, Indonesia red), and how to fix your background for free.',
 }
 
@@ -20,7 +20,7 @@ export default function Post() {
       <div className="space-y-8 text-gray-700 leading-relaxed">
 
         <p className="text-lg text-gray-600">
-          Most countries require a plain white or off-white background for passport photos —
+          Most countries require a plain white or off-white background for passport photos - 
           but not all. Here is why the rule exists, which countries are exceptions, and how
           to fix a photo that has the wrong background.
         </p>
@@ -62,7 +62,7 @@ export default function Post() {
                   { country: '🇩🇪 Germany', bg: 'Light grey or white' },
                   { country: '🇯🇵 Japan', bg: 'White or light grey' },
                   { country: '🇨🇳 China', bg: 'White' },
-                  { country: '🇮🇩 Indonesia', bg: 'Red (yes, red — required)' },
+                  { country: '🇮🇩 Indonesia', bg: 'Red (yes, red - required)' },
                   { country: '🇫🇮 Finland', bg: 'Light grey' },
                 ].map((row, i) => (
                   <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
@@ -78,7 +78,7 @@ export default function Post() {
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">The Red Background Exception: Indonesia</h2>
           <p>
-            Indonesia is a well-known exception — passport and ID photos officially require a
+            Indonesia is a well-known exception - passport and ID photos officially require a
             <strong> red background</strong>. This is a deliberate national standard, not a mistake.
             If you submit a white-background photo for an Indonesian passport or KTP (national ID),
             it will be rejected.
@@ -105,8 +105,8 @@ export default function Post() {
             If your photo has a colored or cluttered background, you have a few options:
           </p>
           <ul className="list-disc pl-6 mt-3 space-y-2">
-            <li><strong>Retake the photo</strong> — stand in front of a plain white wall in good natural light</li>
-            <li><strong>Use our background tool</strong> — upload your photo, click &quot;Fill Background&quot; and our AI
+            <li><strong>Retake the photo</strong> - stand in front of a plain white wall in good natural light</li>
+            <li><strong>Use our background tool</strong> - upload your photo, click &quot;Fill Background&quot; and our AI
             will replace the background with the correct color for your country automatically</li>
           </ul>
         </section>
@@ -114,7 +114,7 @@ export default function Post() {
         <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
           <p className="font-semibold text-blue-900 mb-2">Fix Your Background for Free</p>
           <p className="text-sm text-blue-800 mb-4">
-            Select your country — the tool automatically knows the correct background color and applies it.
+            Select your country - the tool automatically knows the correct background color and applies it.
             Works for white, grey (Finland), and red (Indonesia).
           </p>
           <Link href="/" className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors">

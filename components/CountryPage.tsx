@@ -34,7 +34,7 @@ export default function CountryPage({ document: doc, country }: Props) {
         <div className="text-5xl mb-3">{country.flag}</div>
         <h1 className="text-4xl font-bold text-gray-900 mb-3">{doc.h1}</h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Free online tool — correct {doc.widthMm}×{doc.heightMm}mm size, {doc.bgColorLabel.toLowerCase()} background.
+          Free online tool - correct {doc.widthMm}×{doc.heightMm}mm size, {doc.bgColorLabel.toLowerCase()} background.
           No registration, no watermark. Download JPG or print-ready PDF instantly.
         </p>
       </div>

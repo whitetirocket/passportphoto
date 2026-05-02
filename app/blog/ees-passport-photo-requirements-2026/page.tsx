@@ -71,7 +71,7 @@ const faqSchema = {
       name: 'Will ETIAS require a photo upload?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'ETIAS, scheduled for Q4 2026, is a travel authorisation for visa-exempt nationals (US, UK, Canada, etc). Based on official guidance, the ETIAS online application does not require a photo upload — only passport details, travel info, and a small fee.',
+        text: 'ETIAS, scheduled for Q4 2026, is a travel authorisation for visa-exempt nationals (US, UK, Canada, etc). Based on official guidance, the ETIAS online application does not require a photo upload - only passport details, travel info, and a small fee.',
       },
     },
     {
@@ -84,7 +84,7 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'What if I lose weight, change my hair, or get older — will the EES photo still match me?',
+      name: 'What if I lose weight, change my hair, or get older - will the EES photo still match me?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'EES re-verifies facial biometrics on every entry within the 3-year retention window. Minor changes are tolerated by the matching algorithm. After 3 years your record expires and a new photo is captured on next entry. There is no need to update anything proactively.',
@@ -122,7 +122,7 @@ export default function Post() {
         <p className="text-lg text-gray-600">
           Since the EU&apos;s Entry/Exit System (EES) went live on 10 April 2026, the same question keeps
           showing up in travel forums: <em>do I need a new passport photo because of EES?</em> Short
-          answer — no. Long answer — the rules around <Link href="/schengen-visa-photo" className="text-blue-600 hover:underline">Schengen visa photos</Link> have not changed at all, but the
+          answer - no. Long answer - the rules around <Link href="/schengen-visa-photo" className="text-blue-600 hover:underline">Schengen visa photos</Link> have not changed at all, but the
           confusion is understandable. Here is exactly what changed, what didn&apos;t, and what you actually
           need to bring.
         </p>
@@ -133,7 +133,7 @@ export default function Post() {
             <li><strong>EES launched 10 April 2026</strong> at all Schengen border checkpoints.</li>
             <li><strong>You do not need to upload or bring a new photo for EES.</strong> The facial image is taken at the border on first entry.</li>
             <li><strong>Schengen visa photo specs (35×45 mm) are unchanged.</strong> If you are applying for a visa, the photo requirement is exactly what it was in 2025.</li>
-            <li><strong>ETIAS is coming in Q4 2026</strong> — no photo upload required for that either, based on official guidance.</li>
+            <li><strong>ETIAS is coming in Q4 2026</strong> - no photo upload required for that either, based on official guidance.</li>
             <li>The only thing that has changed at the border itself: an extra 30-90 seconds for biometric capture on first entry.</li>
           </ul>
         </section>
@@ -167,15 +167,15 @@ export default function Post() {
           </p>
           <ol className="list-decimal pl-6 space-y-2 mt-3">
             <li>
-              <strong>The Schengen visa photo</strong> — a 35×45 mm photograph submitted with a visa
+              <strong>The Schengen visa photo</strong> - a 35×45 mm photograph submitted with a visa
               application. This has existed for years and the spec is unchanged.
             </li>
             <li>
-              <strong>The EES facial image</strong> — captured at the border by an officer or kiosk on
+              <strong>The EES facial image</strong> - captured at the border by an officer or kiosk on
               first entry. You do not provide this, the system takes it.
             </li>
             <li>
-              <strong>The ETIAS authorisation</strong> — a separate online system launching in Q4 2026
+              <strong>The ETIAS authorisation</strong> - a separate online system launching in Q4 2026
               for travellers who don&apos;t need a Schengen visa. Based on official guidance, it does
               not require a photo upload.
             </li>
@@ -190,8 +190,8 @@ export default function Post() {
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">What still requires a photo (and the spec)</h2>
           <p>
-            If you need a Schengen visa to enter — that is, you hold a passport that is not on the
-            visa-free list (Indian, Pakistani, Egyptian, Nigerian, Chinese, Russian, and many others) —
+            If you need a Schengen visa to enter - that is, you hold a passport that is not on the
+            visa-free list (Indian, Pakistani, Egyptian, Nigerian, Chinese, Russian, and many others) - 
             your visa application still requires a printed or digital passport-style photograph. The
             specification:
           </p>
@@ -222,7 +222,7 @@ export default function Post() {
           <ol className="list-decimal pl-6 space-y-2 mt-3">
             <li>An officer or self-service kiosk scans your passport.</li>
             <li>You place four fingers (typically right hand) on a fingerprint scanner.</li>
-            <li>A camera takes a live facial image — looking straight at the lens, neutral expression. No need to remove your glasses for this; the algorithm handles it.</li>
+            <li>A camera takes a live facial image - looking straight at the lens, neutral expression. No need to remove your glasses for this; the algorithm handles it.</li>
             <li>The system creates your EES record with a 3-year retention period.</li>
             <li>You proceed through the border check.</li>
           </ol>
@@ -236,7 +236,7 @@ export default function Post() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Children, fingerprints, and exemptions</h2>
           <ul className="list-disc pl-6 space-y-1">
             <li><strong>Children under 12:</strong> facial image is taken, fingerprints are not.</li>
-            <li><strong>EU/EFTA citizens:</strong> exempt entirely — no EES record, no biometric capture.</li>
+            <li><strong>EU/EFTA citizens:</strong> exempt entirely - no EES record, no biometric capture.</li>
             <li><strong>Long-stay visa or residence permit holders:</strong> exempt for the duration of the permit.</li>
             <li><strong>Diplomats with diplomatic visa:</strong> exempt under standard diplomatic rules.</li>
             <li><strong>People physically unable to provide fingerprints:</strong> facial image only.</li>
@@ -246,7 +246,7 @@ export default function Post() {
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Which countries use EES?</h2>
           <p>
-            All 29 Schengen states — the EU members participating in Schengen plus the four associated
+            All 29 Schengen states - the EU members participating in Schengen plus the four associated
             countries:
           </p>
           <ul className="list-disc pl-6 space-y-1 mt-3">
@@ -261,7 +261,7 @@ export default function Post() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">EES vs ETIAS — what&apos;s the difference?</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">EES vs ETIAS - what&apos;s the difference?</h2>
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>
@@ -289,8 +289,8 @@ export default function Post() {
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="py-3 px-4 border border-gray-200 font-medium">Photo upload?</td>
-                  <td className="py-3 px-4 border border-gray-200">No — taken at border</td>
-                  <td className="py-3 px-4 border border-gray-200">No — passport details only</td>
+                  <td className="py-3 px-4 border border-gray-200">No - taken at border</td>
+                  <td className="py-3 px-4 border border-gray-200">No - passport details only</td>
                 </tr>
                 <tr className="bg-white">
                   <td className="py-3 px-4 border border-gray-200 font-medium">Cost</td>
@@ -343,7 +343,7 @@ export default function Post() {
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">Will ETIAS require a photo upload?</p>
-              <p>Based on official guidance for Q4 2026, the ETIAS online application does not require a photo upload — only passport details, travel info, and a €7 fee.</p>
+              <p>Based on official guidance for Q4 2026, the ETIAS online application does not require a photo upload - only passport details, travel info, and a €7 fee.</p>
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">Which countries use EES?</p>
@@ -355,7 +355,7 @@ export default function Post() {
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">Do children need a photo for EES?</p>
-              <p>Yes — a facial image is taken at the border. Children under 12 are exempt from fingerprints but not from face capture.</p>
+              <p>Yes - a facial image is taken at the border. Children under 12 are exempt from fingerprints but not from face capture.</p>
             </div>
             <div>
               <p className="font-semibold text-gray-900 mb-1">Why are travel agents still asking for photos?</p>
@@ -366,7 +366,7 @@ export default function Post() {
 
         <div className="border-t border-gray-200 pt-6 mt-8">
           <p className="text-sm text-gray-500">
-            Need a Schengen visa photo for an upcoming application? <Link href="/schengen-visa-photo" className="text-blue-600 hover:underline">Crop yours to the exact 35×45 mm spec for free</Link> — runs in your browser, no upload, no signup.
+            Need a Schengen visa photo for an upcoming application? <Link href="/schengen-visa-photo" className="text-blue-600 hover:underline">Crop yours to the exact 35×45 mm spec for free</Link> - runs in your browser, no upload, no signup.
           </p>
         </div>
 

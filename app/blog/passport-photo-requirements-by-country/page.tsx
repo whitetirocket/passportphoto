@@ -4,7 +4,7 @@ import { allCountries } from '@/lib/countries'
 
 export const metadata: Metadata = {
   title: 'Passport Photo Requirements by Country: Complete Guide 2026',
-  description: 'Passport photo size, background, and biometric requirements for the US, UK, Canada, Australia, India, EU, UAE, Germany, Japan, Brazil, Mexico, China — all in one place.',
+  description: 'Passport photo size, background, and biometric requirements for the US, UK, Canada, Australia, India, EU, UAE, Germany, Japan, Brazil, Mexico, China - all in one place.',
 }
 
 export default function Post() {
@@ -67,7 +67,7 @@ export default function Post() {
               return (
                 <div key={c.id} className="border border-gray-200 rounded-xl p-5">
                   <h3 className="text-lg font-bold text-gray-900 mb-3">
-                    {c.flag} {c.name} — {d.widthMm}×{d.heightMm}mm
+                    {c.flag} {c.name} - {d.widthMm}×{d.heightMm}mm
                   </h3>
                   <ul className="space-y-1">
                     {d.requirements.slice(0, 5).map((req, i) => (
@@ -93,7 +93,7 @@ export default function Post() {
           <p>Despite the differences in size and background, these rules apply everywhere:</p>
           <ul className="list-disc pl-6 mt-3 space-y-2">
             <li>Both eyes must be open and clearly visible</li>
-            <li>No glasses (required by most countries since 2016–2018)</li>
+            <li>No glasses (required by most countries since 2016 - 2018)</li>
             <li>Neutral expression, mouth closed</li>
             <li>No shadows on the face or background</li>
             <li>Photo taken within the last 6 months</li>

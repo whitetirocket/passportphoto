@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'How to Take a Passport Photo at Home | Step-by-Step Guide 2026',
-  description: 'Save $15–20 by taking your own passport photo at home. Step-by-step guide: background setup, lighting, pose, and how to crop to the correct size for free.',
+  description: 'Save $15 - 20 by taking your own passport photo at home. Step-by-step guide: background setup, lighting, pose, and how to crop to the correct size for free.',
 }
 
 export default function Post() {
@@ -20,8 +20,8 @@ export default function Post() {
       <div className="space-y-8 text-gray-700 leading-relaxed">
 
         <p className="text-lg text-gray-600">
-          A professional passport photo at a drugstore costs $15–20. Taking one at home costs nothing.
-          Here is exactly how to do it right — the first time.
+          A professional passport photo at a drugstore costs $15 - 20. Taking one at home costs nothing.
+          Here is exactly how to do it right - the first time.
         </p>
 
         <section>
@@ -31,14 +31,14 @@ export default function Post() {
             <li>A plain white or light grey wall or background</li>
             <li>Natural light or a lamp in front of you</li>
             <li>Someone to take the photo, or a tripod and a timer</li>
-            <li>PassportPhotoSnap to crop and resize — free, no registration</li>
+            <li>PassportPhotoSnap to crop and resize - free, no registration</li>
           </ul>
         </section>
 
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Step 1: Set Up Your Background</h2>
           <p>
-            Stand or sit 2–3 feet in front of a plain white wall. A white wall, a white sheet,
+            Stand or sit 2 - 3 feet in front of a plain white wall. A white wall, a white sheet,
             or even a plain white door all work.
           </p>
           <p className="mt-3">
@@ -49,7 +49,7 @@ export default function Post() {
             <p className="text-sm font-semibold text-yellow-900">Tip</p>
             <p className="text-sm text-yellow-800 mt-1">
               If you do not have a white wall, tape a large white sheet of paper or a white bedsheet to the wall.
-              It does not need to be perfect — the crop tool will take care of the framing.
+              It does not need to be perfect - the crop tool will take care of the framing.
             </p>
           </div>
         </section>
@@ -61,7 +61,7 @@ export default function Post() {
             place it in front of you, not behind or to the side.
           </p>
           <p className="mt-3">
-            Avoid harsh overhead lighting — it creates shadows under your eyes. Soft, even, front-facing
+            Avoid harsh overhead lighting - it creates shadows under your eyes. Soft, even, front-facing
             light gives the cleanest result.
           </p>
         </section>
@@ -70,10 +70,10 @@ export default function Post() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Step 3: Pose Correctly</h2>
           <ul className="list-disc pl-6 space-y-2">
             <li>Look directly at the camera</li>
-            <li>Keep your head straight — no tilting</li>
+            <li>Keep your head straight - no tilting</li>
             <li>Neutral expression, mouth closed</li>
             <li>Both eyes fully open</li>
-            <li>No glasses (required by most countries since 2016–2018)</li>
+            <li>No glasses (required by most countries since 2016 - 2018)</li>
             <li>Hair out of your face so your full face is visible</li>
           </ul>
         </section>
@@ -97,7 +97,7 @@ export default function Post() {
             the photo, drag the crop handles to frame your face, and download.
           </p>
           <p className="mt-3">
-            You can download a single JPG or a print-ready PDF with multiple copies per page —
+            You can download a single JPG or a print-ready PDF with multiple copies per page - 
             useful for printing at home or at a pharmacy.
           </p>
           <div className="mt-4">
@@ -113,11 +113,11 @@ export default function Post() {
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Common Mistakes to Avoid</h2>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Shadow on the background</strong> — stand further from the wall</li>
-            <li><strong>Blurry photo</strong> — hold the phone steady, or use a tripod</li>
-            <li><strong>Harsh shadows on face</strong> — use softer, front-facing light</li>
-            <li><strong>Wrong expression</strong> — neutral and relaxed, not stiff</li>
-            <li><strong>Wrong size</strong> — always use a tool to resize, do not guess</li>
+            <li><strong>Shadow on the background</strong> - stand further from the wall</li>
+            <li><strong>Blurry photo</strong> - hold the phone steady, or use a tripod</li>
+            <li><strong>Harsh shadows on face</strong> - use softer, front-facing light</li>
+            <li><strong>Wrong expression</strong> - neutral and relaxed, not stiff</li>
+            <li><strong>Wrong size</strong> - always use a tool to resize, do not guess</li>
           </ul>
         </section>
 

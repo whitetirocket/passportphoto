@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { countries } from '@/lib/countries'
 
 export const metadata: Metadata = {
-  title: 'About | PassportPhotoSnap — Free Passport Photo Maker',
-  description: 'Learn about PassportPhotoSnap — a free, private, browser-based passport photo tool. No registration, no watermarks, no uploads.',
+  title: 'About | PassportPhotoSnap - Free Passport Photo Maker',
+  description: 'Learn about PassportPhotoSnap - a free, private, browser-based passport photo tool. No registration, no watermarks, no uploads.',
 }
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
         <section>
           <p className="text-lg text-gray-600">
             PassportPhotoSnap is a free online tool that helps you create compliant passport and visa
-            photos in seconds — without registration, without watermarks, and without uploading your
+            photos in seconds - without registration, without watermarks, and without uploading your
             photo to any server.
           </p>
         </section>
@@ -30,7 +30,7 @@ export default function AboutPage() {
           </p>
           <p className="mt-3">
             We built PassportPhotoSnap to be the tool we always wanted: free, instant, and respectful
-            of your privacy. Your photo never leaves your device — all processing happens in your
+            of your privacy. Your photo never leaves your device - all processing happens in your
             browser using the Canvas API.
           </p>
         </section>
@@ -40,7 +40,7 @@ export default function AboutPage() {
           <ol className="list-decimal pl-6 space-y-2">
             <li>Select your country or document type</li>
             <li>Upload your photo (JPG, PNG, or WEBP)</li>
-            <li>Crop and adjust using the interactive tool — aspect ratio is locked automatically</li>
+            <li>Crop and adjust using the interactive tool - aspect ratio is locked automatically</li>
             <li>Download as a JPG file or a print-ready PDF with multiple photos per page</li>
           </ol>
           <p className="mt-4">

@@ -26,7 +26,7 @@ export default function TermsPage() {
           <p>
             PassportPhotoSnap is a free online tool that helps users crop and resize photos to meet
             passport and visa photo requirements for various countries. All image processing is performed
-            locally in your browser — no images are uploaded to our servers.
+            locally in your browser - no images are uploaded to our servers.
           </p>
         </section>
 

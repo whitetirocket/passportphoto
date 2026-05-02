@@ -11,7 +11,7 @@ import CountriesDropdown from '@/components/CountriesDropdown'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Free Passport Photo Maker — No Registration, No Watermark | IDPhotoSnap',
+  title: 'Free Passport Photo Maker - No Registration, No Watermark | IDPhotoSnap',
   description:
     '100% free passport photo maker. No registration, no watermark, no upload. US, UK, Canada, Australia, India, Schengen, UAE + 7 more countries. Download JPG or print-ready PDF instantly.',
   keywords: 'free passport photo, passport photo maker free, no watermark passport photo, free passport photo online no registration',
@@ -33,7 +33,7 @@ const organizationSchema = {
   url: 'https://idphotosnap.com',
   logo: 'https://idphotosnap.com/IDPhotoSnap.png',
   description:
-    'IDPhotoSnap is a free browser-based passport and visa photo tool. Crops photos to country-specific specifications for 85+ countries with no registration, no watermark, and no server upload — everything is processed locally in the user\'s browser.',
+    'IDPhotoSnap is a free browser-based passport and visa photo tool. Crops photos to country-specific specifications for 85+ countries with no registration, no watermark, and no server upload - everything is processed locally in the user\'s browser.',
   foundingDate: '2026',
   email: 'hello@idphotosnap.com',
   contactPoint: {

@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Can You Smile in a Passport Photo? — Rules by Country 2026',
-  description: 'Can you smile in a passport photo? It depends on the country. Full breakdown: US, UK, Canada, Australia, India, EU, UAE — what expression is required.',
+  title: 'Can You Smile in a Passport Photo? - Rules by Country 2026',
+  description: 'Can you smile in a passport photo? It depends on the country. Full breakdown: US, UK, Canada, Australia, India, EU, UAE - what expression is required.',
 }
 
 export default function Post() {
@@ -21,7 +21,7 @@ export default function Post() {
 
         <p className="text-lg text-gray-600">
           The short answer: most countries require a neutral expression with your mouth closed.
-          A light, natural smile may be acceptable in a few places — but a wide or toothy smile
+          A light, natural smile may be acceptable in a few places - but a wide or toothy smile
           will get your photo rejected almost everywhere.
         </p>
 
@@ -61,11 +61,11 @@ export default function Post() {
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Why No Smiling?</h2>
           <p>
             Modern passports use biometric facial recognition. The algorithms work best when
-            your face is in a neutral, relaxed position — the way it looks when you are not
+            your face is in a neutral, relaxed position - the way it looks when you are not
             actively making an expression.
           </p>
           <p className="mt-3">
-            A wide smile changes the shape of your cheeks, eyes, and mouth — making it harder
+            A wide smile changes the shape of your cheeks, eyes, and mouth - making it harder
             for automated systems at border control to match your face to the photo.
             This is why the ICAO (the international aviation authority) standard requires a
             neutral expression.
@@ -75,11 +75,11 @@ export default function Post() {
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">What Expression Should You Use?</h2>
           <p>
-            Think &quot;relaxed and natural&quot; — not stiff, not smiling. Imagine your face the way
+            Think &quot;relaxed and natural&quot; - not stiff, not smiling. Imagine your face the way
             it looks when you are reading or focused. Mouth closed, eyes open, jaw relaxed.
           </p>
           <p className="mt-3">
-            Avoid frowning — a tense or unhappy expression is not required either. Just neutral.
+            Avoid frowning - a tense or unhappy expression is not required either. Just neutral.
           </p>
         </section>
 

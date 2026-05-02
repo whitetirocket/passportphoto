@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import PhotoTool from '@/components/PhotoTool'
 
 export const metadata: Metadata = {
-  title: 'Remove Passport Photo Background Free — Change to White, Grey or Red',
+  title: 'Remove Passport Photo Background Free - Change to White, Grey or Red',
   description: 'Free AI tool to remove and replace passport photo background. Change to white (US/UK/EU), grey (Finland), or red (Indonesia) instantly. No registration, no watermark.',
   keywords: 'remove passport photo background free, change passport photo background white, passport photo background remover, replace background passport photo',
 }
@@ -15,7 +15,7 @@ const jsonLd = {
   applicationCategory: 'UtilitiesApplication',
   operatingSystem: 'Any',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-  description: 'AI-powered passport photo background remover. Replace background with white, grey, or red — free, no registration.',
+  description: 'AI-powered passport photo background remover. Replace background with white, grey, or red - free, no registration.',
 }
 
 export default function RemoveBackgroundPage() {
@@ -32,20 +32,20 @@ export default function RemoveBackgroundPage() {
           <span className="inline-flex items-center gap-1 bg-gray-100 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full">✓ Processed in Browser</span>
         </div>
         <h1 className="text-4xl font-bold text-gray-900 mb-3">
-          Remove Passport Photo Background — Free
+          Remove Passport Photo Background - Free
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           AI automatically detects your face and replaces the background with the correct color
-          for your country — white, light grey, or red. No registration, no watermark.
+          for your country - white, light grey, or red. No registration, no watermark.
         </p>
       </div>
 
       {/* How it works */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
         {[
-          { step: '1', title: 'Upload your photo', desc: 'Any background — indoor, outdoor, colorful wall' },
+          { step: '1', title: 'Upload your photo', desc: 'Any background - indoor, outdoor, colorful wall' },
           { step: '2', title: 'Select country & click Fill Background', desc: 'AI removes old background, fills with correct color' },
-          { step: '3', title: 'Crop & download free', desc: 'JPG or print-ready PDF — no watermark' },
+          { step: '3', title: 'Crop & download free', desc: 'JPG or print-ready PDF - no watermark' },
         ].map((s) => (
           <div key={s.step} className="flex gap-3 bg-gray-50 rounded-xl p-4">
             <span className="flex-shrink-0 w-7 h-7 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">{s.step}</span>
@@ -84,7 +84,7 @@ export default function RemoveBackgroundPage() {
           ))}
         </div>
         <p className="text-sm text-gray-500 mt-4">
-          Select your country in the tool above — the correct background color is applied automatically.
+          Select your country in the tool above - the correct background color is applied automatically.
         </p>
       </section>
 
@@ -107,11 +107,11 @@ export default function RemoveBackgroundPage() {
             },
             {
               q: 'Will the photo be accepted by the government?',
-              a: 'The tool produces technically correct photos (right size, right background). Acceptance depends on photo quality — good lighting, neutral expression, eyes open. The AI background replacement works best on photos taken with decent lighting.',
+              a: 'The tool produces technically correct photos (right size, right background). Acceptance depends on photo quality - good lighting, neutral expression, eyes open. The AI background replacement works best on photos taken with decent lighting.',
             },
             {
               q: 'What if my photo has a complex background?',
-              a: 'The AI handles most common backgrounds well — plain walls, indoor lighting, simple outdoor shots. For very complex backgrounds (crowds, dense patterns), results may vary. In that case, retaking the photo in front of a plain wall gives the best result.',
+              a: 'The AI handles most common backgrounds well - plain walls, indoor lighting, simple outdoor shots. For very complex backgrounds (crowds, dense patterns), results may vary. In that case, retaking the photo in front of a plain wall gives the best result.',
             },
           ].map((item, i) => (
             <div key={i} className="border border-gray-200 rounded-xl p-5">

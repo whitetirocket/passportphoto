@@ -137,7 +137,7 @@ export default function PhotoTool({ initialDocumentId = 'us-passport' }: Props) 
       {/* Specs badge */}
       <div className="flex justify-center mb-6">
         <span className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 text-sm px-4 py-1.5 rounded-full border border-blue-200">
-          {country.flag} {country.name} — {doc.name} — {doc.widthMm}×{doc.heightMm}mm ({doc.widthPx}×{doc.heightPx}px)
+          {country.flag} {country.name} - {doc.name} - {doc.widthMm}×{doc.heightMm}mm ({doc.widthPx}×{doc.heightPx}px)
         </span>
       </div>
 
@@ -151,7 +151,7 @@ export default function PhotoTool({ initialDocumentId = 'us-passport' }: Props) 
         >
           <div className="text-5xl mb-4">📷</div>
           <p className="text-lg font-medium text-gray-700 mb-1">Drop your photo here</p>
-          <p className="text-sm text-gray-500 mb-4">or click to browse — JPG, PNG, WEBP accepted</p>
+          <p className="text-sm text-gray-500 mb-4">or click to browse - JPG, PNG, WEBP accepted</p>
           <button className="bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors">
             Choose Photo
           </button>
@@ -174,7 +174,7 @@ export default function PhotoTool({ initialDocumentId = 'us-passport' }: Props) 
             {bgDone ? (
               <div className="flex items-center gap-2 text-sm text-green-700 bg-green-50 border border-green-200 px-5 py-2 rounded-full">
                 <span>✓</span>
-                <span>{doc.bgColorLabel} background applied — now crop your photo</span>
+                <span>{doc.bgColorLabel} background applied - now crop your photo</span>
                 <button
                   onClick={() => setBgDone(false)}
                   className="text-xs text-gray-400 hover:text-gray-600 ml-1"
@@ -193,7 +193,7 @@ export default function PhotoTool({ initialDocumentId = 'us-passport' }: Props) 
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
                     </svg>
-                    <span>Processing…</span>
+                    <span>Processing...</span>
                   </>
                 ) : (
                   <>
@@ -290,7 +290,7 @@ export default function PhotoTool({ initialDocumentId = 'us-passport' }: Props) 
       <div className="mt-6 flex justify-center">
         <div className="flex items-center gap-2 text-sm text-gray-500 bg-gray-50 border border-gray-200 rounded-full px-4 py-2">
           <span>🔒</span>
-          <span>Your photo is processed entirely in your browser — never uploaded to any server</span>
+          <span>Your photo is processed entirely in your browser - never uploaded to any server</span>
         </div>
       </div>
     </div>

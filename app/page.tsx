@@ -17,12 +17,12 @@ export default function Home() {
           Free Passport Photo Maker
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Create passport and visa photos online in seconds — completely free.
+          Create passport and visa photos online in seconds - completely free.
           No registration, no watermark, no upload to any server.
         </p>
       </div>
 
-      {/* Ad — leaderboard */}
+      {/* Ad - leaderboard */}
       <div className="flex justify-center mb-8">
         <AdUnit format="leaderboard" />
       </div>
@@ -32,7 +32,7 @@ export default function Home() {
         <PhotoTool initialDocumentId="us-passport" />
       </div>
 
-      {/* Ad — responsive */}
+      {/* Ad - responsive */}
       <div className="mb-12">
         <AdUnit format="responsive" />
       </div>
@@ -67,14 +67,14 @@ export default function Home() {
       {/* Privacy callout */}
       <section className="mb-12 bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
         <div className="text-4xl mb-3">🔒</div>
-        <h2 className="text-xl font-bold text-green-900 mb-2">100% Private — Processed in Your Browser</h2>
+        <h2 className="text-xl font-bold text-green-900 mb-2">100% Private - Processed in Your Browser</h2>
         <p className="text-green-800 max-w-xl mx-auto">
           Your photo is never uploaded to our servers. All cropping, resizing, and PDF generation happens
           locally using JavaScript Canvas API. We literally cannot see your photos.
         </p>
       </section>
 
-      {/* Ad — rectangle */}
+      {/* Ad - rectangle */}
       <div className="flex justify-center">
         <AdUnit format="rectangle" />
       </div>

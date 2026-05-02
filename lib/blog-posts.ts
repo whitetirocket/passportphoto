@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '3 min read',
     publishAt: '2026-04-28T10:00:00Z',
     ogImage: '/IDPhotoSnap.png',
-    imageAlt: 'IDPhotoSnap on Product Hunt — free passport photo maker for 85+ countries',
+    imageAlt: 'IDPhotoSnap on Product Hunt - free passport photo maker for 85+ countries',
   },
   {
     slug: 'how-to-take-passport-photo-with-iphone',
@@ -39,19 +39,19 @@ export const blogPosts: BlogPost[] = [
     publishAt: '2026-04-29T13:42:00Z',
     ogImage: '/blog-images/iphone-hero.png',
     imageAlt:
-      'iPhone passport photo setup — phone on tripod, person facing window with natural light, plain wall behind',
+      'iPhone passport photo setup - phone on tripod, person facing window with natural light, plain wall behind',
   },
   {
     slug: 'ees-passport-photo-requirements-2026',
     title: 'EES Is Live: Do You Need a New Passport Photo? (April 2026 Update)',
     description:
-      "The EU's Entry/Exit System launched on April 10, 2026. Here's what actually changed for passport and visa photos — and what didn't. Schengen visa specs, EES border biometrics, and ETIAS in plain language.",
+      "The EU's Entry/Exit System launched on April 10, 2026. Here's what actually changed for passport and visa photos - and what didn't. Schengen visa specs, EES border biometrics, and ETIAS in plain language.",
     date: 'May 2, 2026',
     readTime: '8 min read',
     publishAt: '2026-05-02T08:00:00Z',
     ogImage: '/blog-images/ees-hero.png',
     imageAlt:
-      'EES 2026 explainer: traveler with passport at biometric Schengen border kiosk, key facts — EES launched 10 April 2026, no photo upload required, visa photo specs unchanged at 35x45mm, ETIAS coming Q4 2026',
+      'EES 2026 explainer: traveler with passport at biometric Schengen border kiosk, key facts - EES launched 10 April 2026, no photo upload required, visa photo specs unchanged at 35x45mm, ETIAS coming Q4 2026',
   },
   {
     slug: 'why-was-my-passport-photo-rejected',
@@ -93,7 +93,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'how-to-take-passport-photo-at-home',
     title: 'How to Take a Passport Photo at Home (Step-by-Step Guide)',
     description:
-      'Save $15–20 by taking your own passport photo at home. Here is exactly how to do it right — background, lighting, pose, and common mistakes to avoid.',
+      'Save $15 - 20 by taking your own passport photo at home. Here is exactly how to do it right - background, lighting, pose, and common mistakes to avoid.',
     date: 'April 2026',
     readTime: '5 min read',
     publishAt: '2026-04-01T00:00:00Z',
@@ -135,7 +135,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'white-background-passport-photo',
-    title: 'Why Passport Photos Need a White Background — Rules Explained',
+    title: 'Why Passport Photos Need a White Background - Rules Explained',
     description:
       'Why white? Which countries are exceptions (Finland: grey, Indonesia: red)? And how to fix your background for free before your application.',
     date: 'April 2026',
@@ -148,7 +148,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'print-passport-photo-at-home',
     title: 'How to Print a Passport Photo at Home (or at a Lab for Under $1)',
     description:
-      'Download a print-ready PDF with 6 photos per A4. Step-by-step guide for home printing and photo labs. Save $10–20 vs pharmacy kiosks.',
+      'Download a print-ready PDF with 6 photos per A4. Step-by-step guide for home printing and photo labs. Save $10 - 20 vs pharmacy kiosks.',
     date: 'April 2026',
     readTime: '5 min read',
     publishAt: '2026-04-01T00:00:00Z',

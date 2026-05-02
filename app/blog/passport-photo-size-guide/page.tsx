@@ -20,7 +20,7 @@ export default function Post() {
       <div className="space-y-8 text-gray-700 leading-relaxed">
 
         <p className="text-lg text-gray-600">
-          Passport photo size requirements vary significantly by country — and submitting the wrong size
+          Passport photo size requirements vary significantly by country - and submitting the wrong size
           is one of the most common reasons applications get rejected. This guide covers exact dimensions
           for every major country in mm, inches, and pixels.
         </p>
@@ -71,10 +71,10 @@ export default function Post() {
           <p>
             Each country sets its own standards. The US uses the imperial system (2×2 inches), while
             most other countries follow metric dimensions. The ICAO standard recommends 35×45mm, which
-            is why many countries share that size — but there is no single universal requirement.
+            is why many countries share that size - but there is no single universal requirement.
           </p>
           <p className="mt-3">
-            China is a notable exception at 33×48mm — a unique size that will not fit standard
+            China is a notable exception at 33×48mm - a unique size that will not fit standard
             passport photo frames sold elsewhere.
           </p>
         </section>
@@ -87,7 +87,7 @@ export default function Post() {
             300 DPI needs 413×531 pixels.
           </p>
           <p className="mt-3">
-            Online services and our tool automatically output the correct pixel dimensions — you just
+            Online services and our tool automatically output the correct pixel dimensions - you just
             need to select your country.
           </p>
         </section>
@@ -95,17 +95,17 @@ export default function Post() {
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Head Size Requirements</h2>
           <p>
-            Size alone is not enough — most countries also specify how large your head should appear
+            Size alone is not enough - most countries also specify how large your head should appear
             in the photo:
           </p>
           <ul className="list-disc pl-6 mt-3 space-y-2">
-            <li><strong>US:</strong> Head height 1 to 1 3/8 inches (25–35mm) from chin to top of head</li>
-            <li><strong>UK:</strong> Face should be 29–34mm from chin to crown</li>
-            <li><strong>Canada:</strong> Face 31–36mm from chin to crown</li>
-            <li><strong>Schengen:</strong> Head 32–36mm, face 70–80% of frame height</li>
+            <li><strong>US:</strong> Head height 1 to 1 3/8 inches (25 - 35mm) from chin to top of head</li>
+            <li><strong>UK:</strong> Face should be 29 - 34mm from chin to crown</li>
+            <li><strong>Canada:</strong> Face 31 - 36mm from chin to crown</li>
+            <li><strong>Schengen:</strong> Head 32 - 36mm, face 70 - 80% of frame height</li>
           </ul>
           <p className="mt-3">
-            Use the crop tool to position your head correctly — it locks the aspect ratio but you control
+            Use the crop tool to position your head correctly - it locks the aspect ratio but you control
             how much of the frame your face fills.
           </p>
         </section>
