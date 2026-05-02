@@ -49,9 +49,9 @@ export const blogPosts: BlogPost[] = [
     date: 'May 2, 2026',
     readTime: '8 min read',
     publishAt: '2026-05-02T08:00:00Z',
-    ogImage: '/IDPhotoSnap.png',
+    ogImage: '/blog-images/ees-hero.png',
     imageAlt:
-      'EU Entry/Exit System (EES) explained: biometric photo taken at Schengen border kiosk, Schengen visa photo specification 35x45mm unchanged, ETIAS launching Q4 2026',
+      'EES 2026 explainer: traveler with passport at biometric Schengen border kiosk, key facts — EES launched 10 April 2026, no photo upload required, visa photo specs unchanged at 35x45mm, ETIAS coming Q4 2026',
   },
   {
     slug: 'why-was-my-passport-photo-rejected',
