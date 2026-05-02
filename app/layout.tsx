@@ -81,6 +81,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Logo />
             <nav className="hidden md:flex items-center gap-1 flex-1 ml-4">
               <CountriesDropdown />
+              <Link href="/fix/photo-rejected-passport" className="text-sm font-medium text-gray-600 hover:text-blue-600 px-3 py-1.5 rounded-lg hover:bg-gray-50 transition-colors">
+                Photo Rejected?
+              </Link>
               <Link href="/blog" className="text-sm font-medium text-gray-600 hover:text-blue-600 px-3 py-1.5 rounded-lg hover:bg-gray-50 transition-colors">
                 Blog
               </Link>
@@ -137,6 +140,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <p className="font-semibold text-sm mb-3 text-gray-800">Tools</p>
                 <ul className="space-y-1">
                   <li><Link href="/remove-background" className="text-sm text-gray-500 hover:text-blue-600">Remove Background</Link></li>
+                  <li><Link href="/fix/photo-rejected-passport" className="text-sm text-gray-500 hover:text-blue-600">Photo Rejected?</Link></li>
                   <li><Link href="/blog" className="text-sm text-gray-500 hover:text-blue-600">Guides & Tips</Link></li>
                   <li><Link href="/about" className="text-sm text-gray-500 hover:text-blue-600">About</Link></li>
                 </ul>

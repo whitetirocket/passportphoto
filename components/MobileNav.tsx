@@ -27,9 +27,12 @@ export default function MobileNav() {
 
       {open && (
         <div className="absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-lg z-50 p-4">
-          <div className="flex gap-2 mb-3 pb-3 border-b border-gray-100">
+          <div className="flex flex-wrap gap-2 mb-3 pb-3 border-b border-gray-100">
             <Link href="/remove-background" onClick={() => setOpen(false)} className="flex items-center gap-1.5 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-full transition-colors">
               🎨 Remove BG
+            </Link>
+            <Link href="/fix/photo-rejected-passport" onClick={() => setOpen(false)} className="flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 px-3 py-1.5 rounded-full border border-gray-200 hover:border-blue-300 transition-colors">
+              Rejected?
             </Link>
             <Link href="/blog" onClick={() => setOpen(false)} className="flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 px-3 py-1.5 rounded-full border border-gray-200 hover:border-blue-300 transition-colors">
               Blog
