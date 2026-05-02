@@ -5,6 +5,7 @@ import { countries } from '@/lib/countries'
 export const metadata: Metadata = {
   title: 'About | PassportPhotoSnap - Free Passport Photo Maker',
   description: 'Learn about PassportPhotoSnap - a free, private, browser-based passport photo tool. No registration, no watermarks, no uploads.',
+  alternates: { canonical: '/about' },
 }
 
 export default function AboutPage() {

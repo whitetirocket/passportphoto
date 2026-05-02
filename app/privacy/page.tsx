@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Privacy Policy | PassportPhotoSnap',
   description: 'Privacy policy for PassportPhotoSnap. Learn how we handle your data - spoiler: we don\'t collect any photos.',
+  alternates: { canonical: '/privacy' },
 }
 
 export default function PrivacyPage() {

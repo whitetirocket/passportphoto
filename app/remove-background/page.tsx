@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Remove Passport Photo Background Free - Change to White, Grey or Red',
   description: 'Free AI tool to remove and replace passport photo background. Change to white (US/UK/EU), grey (Finland), or red (Indonesia) instantly. No registration, no watermark.',
   keywords: 'remove passport photo background free, change passport photo background white, passport photo background remover, replace background passport photo',
+  alternates: { canonical: '/remove-background' },
 }
 
 const jsonLd = {

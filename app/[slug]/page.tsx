@@ -18,10 +18,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: doc.seoTitle,
     description: doc.seoDescription,
+    alternates: { canonical: `/${slug}` },
     openGraph: {
       title: doc.seoTitle,
       description: doc.seoDescription,
       type: 'website',
+      url: `https://idphotosnap.com/${slug}`,
     },
   }
 }

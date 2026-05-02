@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Terms of Use | PassportPhotoSnap',
   description: 'Terms of use for PassportPhotoSnap free passport photo maker.',
+  alternates: { canonical: '/terms' },
 }
 
 export default function TermsPage() {
