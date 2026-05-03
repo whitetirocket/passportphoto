@@ -42,6 +42,18 @@ export const blogPosts: BlogPost[] = [
       'iPhone passport photo setup - phone on tripod, person facing window with natural light, plain wall behind',
   },
   {
+    slug: 'german-passport-photo-requirements-2026',
+    title: 'German Passport Photo Requirements 2026 (Reisepass, Personalausweis, Visa)',
+    description:
+      'Complete guide to German passport photo specifications in 2026: 35x45mm biometric size, ICAO 9303 compliance, glasses ban since 2017, common rejection reasons, and how to take a Bundesdruckerei-compliant photo at home for free.',
+    date: 'May 3, 2026',
+    readTime: '9 min read',
+    publishAt: '2026-05-03T18:00:00Z',
+    ogImage: '/blog-images/german-hero.png',
+    imageAlt:
+      'German passport photo 2026 explainer: Reisepass and Personalausweis requirements, 35x45mm biometric specifications, ICAO 9303 compliance, glasses banned since 2017',
+  },
+  {
     slug: 'ees-passport-photo-requirements-2026',
     title: 'EES Is Live: Do You Need a New Passport Photo? (April 2026 Update)',
     description:
